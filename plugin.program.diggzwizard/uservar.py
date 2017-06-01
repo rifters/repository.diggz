@@ -4,20 +4,20 @@ import os, xbmc, xbmcaddon
 ### User Edit Variables #################################
 #########################################################
 ADDON_ID       = xbmcaddon.Addon().getAddonInfo('id')
-ADDONTITLE     = 'Diggz Fire Builds Wizard'
+ADDONTITLE     = 'Diggz Wizard'
 EXCLUDES       = [ADDON_ID, 'plugin.program.diggzwizard']
 # Text File with build info in it.
-BUILDFILE      = 'http://jed.one/diggzwizard.txt'
+BUILDFILE      = 'http://dscroggswiz.com/Diggz/diggzwizard.txt'
 # How often you would list it to check for build updates in days
 # 0 being every startup of kodi
 UPDATECHECK    = 0
 # Text File with apk info in it.
-APKFILE        = 'http://jed.one/Diggzwizardapk.txt'
+APKFILE        = 'http://dscroggswiz.com/Diggz/Diggzwizardapk.txt'
 # Text File with Youtube Videos urls.  Leave as 'http://' to ignore
-YOUTUBETITLE   = 'Diggz Builds Youtube help videos'
-YOUTUBEFILE    = 'http://jed.one/Diggzwizardyoutube.txt'
+YOUTUBETITLE   = 'Diggz  Help Videos'
+YOUTUBEFILE    = 'http://dscroggswiz.com/Diggz/Diggzwizardyoutube.txt'
 # Text File for addon installer.  Leave as 'http://' to ignore
-ADDONFILE      = 'http://jed.one/DiggzWizardaddons.txt'
+ADDONFILE      = 'http://dscroggswiz.com/Diggz/DiggzWizardaddons.txt'
 # Text File for advanced settings.  Leave as 'http://' to ignore
 ADVANCEDFILE   = 'http://'
 
@@ -34,17 +34,17 @@ ART            = os.path.join(PATH, 'resources', 'art')
 # Example:  ICONMAINT     = os.path.join(ART, 'mainticon.png')
 #           ICONSETTINGS  = 'http://aftermathwizard.net/repo/wizard/settings.png'
 # Leave as http:// for default icon
-ICONBUILDS     = 'http://jed.one/DiggzWizardpngs/eminencelogo.jpg'
-ICONMAINT      = 'http://jed.one/DiggzWizardpngs/maintenance.png'
-ICONAPK        = 'http://jed.one/DiggzWizardpngs/apkinstaller.png'
-ICONADDONS     = 'http://jed.one/DiggzWizardpngs/addoninstaller-1.png'
-ICONYOUTUBE    = 'http://jed.one/DiggzWizardpngs/youtube.png'
-ICONSAVE       = 'http://jed.one/DiggzWizardpngs/savedata.png'
-ICONTRAKT      = 'http://jed.one/DiggzWizardpngs/trakt.png'
-ICONREAL       = 'http://jed.one/DiggzWizardpngs/real-debrid-1.png'
-ICONLOGIN      = 'http://jed.one/DiggzWizardpngs/login.png'
-ICONCONTACT    = 'http://jed.one/DiggzWizardpngs/contact%20us.png'
-ICONSETTINGS   = 'http://jed.one/DiggzWizardpngs/settingsicon.png'
+ICONBUILDS     = 'http://dscroggswiz.com/Diggz/Diggz%20Wizard%20img/build-icon.png'
+ICONMAINT      = 'http://dscroggswiz.com/Diggz/Diggz%20Wizard%20img/mantanence-icon.png'
+ICONAPK        = 'http://dscroggswiz.com/Diggz/Diggz%20Wizard%20img/apkinstaller.png'
+ICONADDONS     = 'http://dscroggswiz.com/Diggz/Diggz%20Wizard%20img/addoninstaller-1.png'
+ICONYOUTUBE    = 'http://dscroggswiz.com/Diggz/Diggz%20Wizard%20img/youtube.png'
+ICONSAVE       = 'http://dscroggswiz.com/Diggz/Diggz%20Wizard%20img/savedata.png'
+ICONTRAKT      = 'http://dscroggswiz.com/Diggz/Diggz%20Wizard%20img/trakt.png'
+ICONREAL       = 'http://dscroggswiz.com/Diggz/Diggz%20Wizard%20img/real-debrid-1.png'
+ICONLOGIN      = 'http://dscroggswiz.com/Diggz/Diggz%20Wizard%20img/login.png'
+ICONCONTACT    = 'http://dscroggswiz.com/Diggz/Diggz%20Wizard%20img/contact%20us.png'
+ICONSETTINGS   = 'http://dscroggswiz.com/Diggz/Diggz%20Wizard%20img/Settings-icon.png'
 # Hide the ====== seperators 'Yes' or 'No'
 HIDESPACERS    = 'No'
 # Character used in seperator
@@ -52,7 +52,7 @@ SPACER         = '='
 
 # You can edit these however you want, just make sure that you have a %s in each of the
 # THEME's so it grabs the text from the menu item
-COLOR1         = 'dodgerblue'
+COLOR1         = 'red'
 COLOR2         = 'white'
 # Primary menu items   / %s is the menu item and is required
 THEME1         = '[COLOR '+COLOR1+'][B][I]([COLOR '+COLOR2+']Diggz[/COLOR])[/B][/COLOR] [COLOR '+COLOR2+']%s[/COLOR][/I]'
@@ -69,17 +69,17 @@ THEME5         = '[COLOR '+COLOR1+']Current Theme:[/COLOR] [COLOR '+COLOR2+']%s[
 # Enable 'Contact' menu item 'Yes' hide or 'No' dont hide
 HIDECONTACT    = 'No'
 # You can add \n to do line breaks
-CONTACT        = 'Enjoy Diggz Fire Builds.\r\n\r\nFor support, join Diggz Tech Talk on Facebook: https://www.facebook.com/groups/1760004300910864/'
+CONTACT        = 'Thank you for choosing Aftermath Wizard.\r\n\r\nContact us on facebook at http://facebook.com'
 #Images used for the contact window.  http:// for default icon and fanart
-CONTACTICON    = 'http://jed.one/DiggzWizardpngs/Facebook_Contact_Directories.png'
-CONTACTFANART  = 'http://jed.one/DiggzWizardpngs/fanart.jpg'
+CONTACTICON    = 'http://'
+CONTACTFANART  = 'http://'
 #########################################################
 
 #########################################################
 ### AUTO UPDATE #########################################
 ########## FOR THOSE WITH NO REPO #######################
 # Enable Auto Update 'Yes' or 'No'
-AUTOUPDATE     = 'No'
+AUTOUPDATE     = 'Yes'
 # Url to wizard version
 WIZARDFILE     = ''
 #########################################################
