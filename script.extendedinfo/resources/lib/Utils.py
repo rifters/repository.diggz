@@ -26,7 +26,7 @@ ADDON_ICON = ADDON.getAddonInfo('icon')
 ADDON_NAME = ADDON.getAddonInfo('name')
 ADDON_PATH = ADDON.getAddonInfo('path').decode("utf-8")
 ADDON_VERSION = ADDON.getAddonInfo('version')
-ADDON_DATA_PATH = xbmc.translatePath("special://profile/addon_data/%s" % ADDON_ID).decode("utf-8")
+ADDON_DATA_PATH = xbmc.translatePath("special://home/userdata/addon_data/%s" % ADDON_ID).decode("utf-8")
 HOME = xbmcgui.Window(10000)
 SETTING = ADDON.getSetting
 COLORMAIN = SETTING("colormain")
@@ -59,7 +59,7 @@ def get_status():
 
 def get_addons(type=None):
     if not get_status(): return []
-    path = xbmc.translatePath("special://profile/addon_data/script.extendedinfo/simple_selector_%s.txt" % type)
+    path = xbmc.translatePath("special://home/userdata/addon_data/script.extendedinfo/simple_selector_%s.txt" % type)
     if xbmcvfs.exists(path):
         addonstring = read_from_file(path, raw=True)
         addon_list = addonstring.rstrip("\n").split("\n")
@@ -69,7 +69,7 @@ def get_addons(type=None):
     else:
         addons = []
         ids = []
-        players_path = "special://profile/addon_data/plugin.video.metalliq/players/"
+        players_path = "special://home/userdata/addon_data/plugin.video.metalliq/players/"
         files = [x for x in xbmcvfs.listdir(players_path)[1] if x.endswith(".json")]
         for file in files:
             path = xbmc.translatePath(os.path.join(players_path,file))
@@ -101,7 +101,7 @@ def get_addons(type=None):
                     ids.append(str(meta["id"]))
                 else: pass
             except: pass
-        file = xbmc.translatePath("special://profile/addon_data/script.extendedinfo/simple_selector_%s.txt" % type)
+        file = xbmc.translatePath("special://home/userdata/addon_data/script.extendedinfo/simple_selector_%s.txt" % type)
         addon_list = ""
         if addons != [] and len(addons) > 0:
             for addon in addons:
@@ -634,8 +634,8 @@ def get_file(url):
     if clean_url.endswith("/"):
         clean_url = clean_url[:-1]
     cached_thumb = xbmc.getCacheThumbName(clean_url)
-    vid_cache_file = os.path.join("special://profile/Thumbnails/Video", cached_thumb[0], cached_thumb)
-    cache_file_jpg = os.path.join("special://profile/Thumbnails/", cached_thumb[0], cached_thumb[:-4] + ".jpg").replace("\\", "/")
+    vid_cache_file = os.path.join("special://home/userdata/Thumbnails/Video", cached_thumb[0], cached_thumb)
+    cache_file_jpg = os.path.join("special://home/userdata/Thumbnails/", cached_thumb[0], cached_thumb[:-4] + ".jpg").replace("\\", "/")
     cache_file_png = cache_file_jpg[:-4] + ".png"
     if xbmcvfs.exists(cache_file_jpg):
         log("cache_file_jpg Image: " + url + "-->" + cache_file_jpg)

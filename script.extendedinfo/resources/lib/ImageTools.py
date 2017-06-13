@@ -10,7 +10,7 @@ import os
 from Utils import *
 from PIL import Image, ImageFilter, ImageOps
 
-THUMBS_CACHE_PATH = xbmc.translatePath("special://profile/Thumbnails/Video")
+THUMBS_CACHE_PATH = xbmc.translatePath("special://home/userdata/Thumbnails/Video")
 ADDON_DATA_PATH_IMAGES = os.path.join(ADDON_DATA_PATH, "images")
 if not xbmcvfs.exists(ADDON_DATA_PATH_IMAGES): xbmcvfs.mkdir(ADDON_DATA_PATH_IMAGES)
 if not xbmcvfs.exists(os.path.join(ADDON_DATA_PATH, "posters")): xbmcvfs.mkdir(os.path.join(ADDON_DATA_PATH, "posters"))
@@ -19,7 +19,7 @@ POSTERS = os.path.join(ADDON_DATA_PATH, "posters")
 def concatenate(posters=[], label=""):
     if posters == [] or label == "": return ""
     filename = os.path.join(POSTERS, "%s.jpg" % label)
-    specname = "special://profile/addon_data/script.extendedinfo/posters/%s.jpg" % label
+    specname = "special://home/userdata/addon_data/script.extendedinfo/posters/%s.jpg" % label
     if xbmcvfs.exists(filename): return specname
     img_width, img_height = 333, 500
     cimgs = []
@@ -116,8 +116,8 @@ def filter_image(input_img, radius):
     cachedthumb = xbmc.getCacheThumbName(input_img)
     filename = "%s-radius_%i.png" % (cachedthumb, radius)
     targetfile = os.path.join(ADDON_DATA_PATH_IMAGES, filename)
-    xbmc_vid_cache_file = os.path.join("special://profile/Thumbnails/Video", cachedthumb[0], cachedthumb)
-    xbmc_cache_file = os.path.join("special://profile/Thumbnails", cachedthumb[0], cachedthumb[:-4] + ".jpg")
+    xbmc_vid_cache_file = os.path.join("special://home/userdata/Thumbnails/Video", cachedthumb[0], cachedthumb)
+    xbmc_cache_file = os.path.join("special://home/userdata/Thumbnails", cachedthumb[0], cachedthumb[:-4] + ".jpg")
     if input_img == "":
         return "", ""
     if not xbmcvfs.exists(targetfile):

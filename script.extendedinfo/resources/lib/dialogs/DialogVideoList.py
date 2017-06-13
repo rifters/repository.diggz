@@ -132,7 +132,7 @@ def get_tmdb_window(window_type):
             if selection == 0:
                 if self.type == "tv" or self.type == "episode":
                     if self.listitem.getProperty("dbid"):
-                        show_playlist = xbmc.translatePath("special://profile/playlists/video/%s.xsp" % (tvdb_id, SETTING("player_alt")))
+                        show_playlist = xbmc.translatePath("special://home/userdata/playlists/video/%s.xsp" % (tvdb_id, SETTING("player_alt")))
                         if os.path.exists(show_playlist):
                             url = show_playlist
                         else: url = 'plugin://plugin.video.metalliq/tv/play/%s/1/1/%s' % (tvdb_id, SETTING("player_alt"))
@@ -191,7 +191,7 @@ def get_tmdb_window(window_type):
                             self.getControl(500).selectItem(self.position)
                 else:
                     if self.type == "episode":
-                        path = xbmc.translatePath("special://profile/addon_data/script.qlickplay/exclusions_tvdb.txt")
+                        path = xbmc.translatePath("special://home/userdata/addon_data/script.qlickplay/exclusions_tvdb.txt")
                         if xbmcvfs.exists(path): content = read_from_file(path, True).split("\n")
                         else: content = []
                         content.append("year - tvdb-id | TVShowTitle")
@@ -212,7 +212,7 @@ def get_tmdb_window(window_type):
                     elif self.type == "tv" or self.type == "episode":
                         xbmc.executebuiltin("RunPlugin(plugin://plugin.video.sickrage?action=addshow&tvdb_id=%s)" % tvdb_id)
                 if self.type == "episode":
-                    path = xbmc.translatePath("special://profile/addon_data/script.qlickplay/exclusions_tvdb.txt")
+                    path = xbmc.translatePath("special://home/userdata/addon_data/script.qlickplay/exclusions_tvdb.txt")
                     if xbmcvfs.exists(path): content = read_from_file(path, True).split("\n")
                     else: content = []
                     content.append("year - tvdb-id | TVShowTitle")

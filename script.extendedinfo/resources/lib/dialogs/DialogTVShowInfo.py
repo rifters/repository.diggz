@@ -193,9 +193,9 @@ def get_tvshow_window(window_type):
 
         @ch.click(9)
         def play_tvshow_no_resume(self):
-            #playlist = "special://profile/playlists/video/%s.xsp" % self.info.get("tvdb_id", "")
+            #playlist = "special://home/userdata/playlists/video/%s.xsp" % self.info.get("tvdb_id", "")
             if self.dbid:
-                url = "special://profile/playlists/video/%s.xsp" % self.info.get("tvdb_id", "")
+                url = "special://home/userdata/playlists/video/%s.xsp" % self.info.get("tvdb_id", "")
                 if not os.path.exists(url):
                     url = "plugin://plugin.video.metalliq/tv/play/%s/1/1/%s" % (self.info.get("tvdb_id", ""), SETTING("player_main_tv"))
             else:
