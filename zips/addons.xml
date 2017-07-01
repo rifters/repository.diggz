@@ -15,13 +15,8 @@
   </extension>
 </addon>
 
-<addon id="repository.diggz" name="Diggz Repo" version="1.1" provider-name="Jason Diggz">
+<addon id="repository.diggz" name="Diggz Repo" version="1.2" provider-name="J Diggz">
 	<extension point="xbmc.addon.repository" name="Diggz Repo">
-		<dir>
-			<info compressed="false">https://offshoregit.com/tvaresolvers/tva-common-repository/raw/master/addons.xml</info>
-			<checksum>https://offshoregit.com/tvaresolvers/tva-common-repository/raw/master/addons.xml.md5</checksum>
-			<datadir zip="true">https://offshoregit.com/tvaresolvers/tva-common-repository/raw/master/zips/</datadir>
-		</dir>
 		<dir>
 			<info compressed="false">https://raw.githubusercontent.com/noobsandnerds/modules4all/master/zips/addons.xml</info>
 			<checksum>https://raw.githubusercontent.com/noobsandnerds/modules4all/master/zips/addons.xml.md5</checksum>
@@ -32,69 +27,9 @@
 		<datadir zip="true">https://raw.githubusercontent.com/jdig4240/repository.diggz/master/zips/</datadir>
 	</extension>
 	<extension point="xbmc.addon.metadata">
-		<summary lang="en">Diggz Builds Repository</summary>
-		<description lang="en">Use this repo to update Diggz Wizard and other cool stuff</description>
-		<genre>devtools,howto,usa</genre>
+		<summary lang="en">Repo for Diggz </summary>
+		<description lang="en">Update and install Diggz builds</description>
+		<genre></genre>
 	</extension>
-</addon>
-
-<addon id="repository.noobsandnerds" name="noobsandnerds Repository" version="1.7" provider-name="noobsandnerds">
-	<extension point="xbmc.addon.repository" name="noobsandnerds Repository">
-		<dir>
-			<info compressed="false">https://offshoregit.com/tvaresolvers/tva-common-repository/raw/master/addons.xml</info>
-			<checksum>https://offshoregit.com/tvaresolvers/tva-common-repository/raw/master/addons.xml.md5</checksum>
-			<datadir zip="true">https://offshoregit.com/tvaresolvers/tva-common-repository/raw/master/zips/</datadir>
-		</dir>
-		<dir>
-			<info compressed="false">https://raw.githubusercontent.com/noobsandnerds/modules4all/master/zips/addons.xml</info>
-			<checksum>https://raw.githubusercontent.com/noobsandnerds/modules4all/master/zips/addons.xml.md5</checksum>
-			<datadir zip="true">https://raw.githubusercontent.com/noobsandnerds/modules4all/master/zips/</datadir>
-		</dir>
-		<info compressed="false">https://raw.githubusercontent.com/noobsandnerds/noobsandnerds/master/zips/addons.xml</info>
-		<checksum>https://raw.githubusercontent.com/noobsandnerds/noobsandnerds/master/zips/addons.xml.md5</checksum>
-		<datadir zip="true">https://raw.githubusercontent.com/noobsandnerds/noobsandnerds/master/zips/</datadir>
-	</extension>
-	<extension point="xbmc.addon.metadata">
-		<summary>Home of The Community Portal</summary>
-		<description>Visit www.noobsandnerds.com and become a part of our great family, you get to choose what The Community Portal holds!</description>
-		<platform>all</platform>
-	</extension>
-</addon>
-
-<addon id="script.extendedinfo" name="[COLOR ff0084ff]E[/COLOR]xtended [COLOR ff0084ff]I[/COLOR]nfo [COLOR ff0084ff]M[/COLOR]od" version="420" provider-name="Modded by [COLOR FF8ABEE2]Open[/COLOR][COLOR FF757677]ELEQ[/COLOR], original work by phil65">
-  <requires>
-    <import addon="xbmc.python"                     version="2.19.0"/>
-    <import addon="plugin.program.super.favourites" version="1.0.48"/>
-    <import addon="plugin.video.metalliq"           version="2.0.0"/>
-    <import addon="plugin.video.youtube"            version="5.3.10"/>
-    <import addon="repository.q"/>
-    <import addon="script.module.pil"               version="1.1.7"/>
-    <import addon="script.module.requests"          version="1.1.0"/>
-    <import addon="script.module.simplejson"        version="2.0.10"/>
-    <import addon="script.module.urlresolver"       version="1.0.0"/>
-    <import addon="script.module.youtube.dl"        version="14.519.1"/>
-  </requires>
-  <extension point="xbmc.python.script"             library="default.py">
-    <provides>executable</provides>
-  </extension>
-  <extension point="xbmc.python.library"            library="default.py" />
-  <extension point="xbmc.python.pluginsource"       library="plugin.py">
-    <provides>video</provides>
-  </extension>
-  <extension point="xbmc.addon.metadata">
-    <language/>
-    <summary lang="en">[COLOR ff0084ff]E[/COLOR]xtended [COLOR ff0084ff]I[/COLOR]nfo [COLOR ff0084ff]M[/COLOR]od</summary>
-    <description lang="en">This script offers various possibilities to display online content inside skins as well as a complete MovieDB browser including info dialogs for various media types. Used services are themoviedb.org, theaudiodb.org, Trakt.TV, omdbapi.com and a lot more. Needs skin implementation for lot of functions. Uses [COLOR ff0084ff]M[/COLOR]etalli[COLOR ff0084ff]Q[/COLOR] for playback and library functions.</description>
-    <summary lang="nl">[COLOR ff0084ff]E[/COLOR]xtended [COLOR ff0084ff]I[/COLOR]nfo [COLOR ff0084ff]M[/COLOR]od</summary>
-    <description lang="nl">Dit script biedt meerdere mogelijkheden om online content weer te geven in skins en bevat ook een complete MovieDB browser inclusief info dialogen voor verscheidene media types. Gebruikte diensten zijn themoviedb.org, theaudiodb.org, Trakt.TV, omdbapi.com en nog veel meer. Vereist skin implementatie voor de meeste functies. Gebruikt [COLOR ff0084ff]M[/COLOR]etalli[COLOR ff0084ff]Q[/COLOR] voor afspeel en bibliotheek functies.</description>
-    <platform>all</platform>
-    <genre>movies,tv,trailers</genre>
-    <video_guide>3nlzITuJizg</video_guide>
-    <video_preview>OIp3Ry7qml8</video_preview>
-    <license>GNU GENERAL PUBLIC LICENSE Version 2, June 1991</license>
-    <forum>http://www.noobsandnerds.com/support/showthread.php?tid=15273</forum>
-    <source>https://github.com/OpenELEQ/repository.q/tree/master/zips/script.extendedinfo</source>
-    <email>OpenELEQ@gmail.com</email>
-  </extension>
 </addon>
 </addons>
