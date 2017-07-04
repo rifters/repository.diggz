@@ -7,17 +7,17 @@ ADDON_ID       = xbmcaddon.Addon().getAddonInfo('id')
 ADDONTITLE     = 'Diggz Wizard'
 EXCLUDES       = [ADDON_ID, 'repository.diggz', 'plugin.program.diggzwizard']
 # Text File with build info in it.
-BUILDFILE      = 'http://jeds.areshost2.seedr.io/Other/diggz%20wizard/wizrdtexts/diggzwizard.txt'
+BUILDFILE      = 'http://wizardfiles.jdiggz.com/wizrdtexts/diggzwizard.txt'
 # How often you would list it to check for build updates in days
 # 0 being every startup of kodi
-UPDATECHECK    = 3
+UPDATECHECK    = 0
 # Text File with apk info in it.
-APKFILE        = 'http://jeds.areshost2.seedr.io/Other/diggz%20wizard/wizrdtexts/Diggzwizardapk.txt'
+APKFILE        = 'http://wizardfiles.jdiggz.com/wizrdtexts/Diggzwizardapk.txt'
 # Text File with Youtube Videos urls.  Leave as 'http://' to ignore
-YOUTUBETITLE   = 'Help Videos'
-YOUTUBEFILE    = 'http://jeds.areshost2.seedr.io/Other/diggz%20wizard/wizrdtexts/Diggzwizardyoutube.txt'
+YOUTUBETITLE   = ''
+YOUTUBEFILE    = 'http://'
 # Text File for addon installer.  Leave as 'http://' to ignore
-ADDONFILE      = 'http://jeds.areshost2.seedr.io/Other/diggz%20wizard/wizrdtexts/DiggzWizardaddons.txt'
+ADDONFILE      = 'http://wizardfiles.jdiggz.com/wizrdtexts/DiggzWizardaddons.txt'
 # Text File for advanced settings.  Leave as 'http://' to ignore
 ADVANCEDFILE   = 'http://'
 
@@ -34,17 +34,17 @@ ART            = os.path.join(PATH, 'resources', 'art')
 # Example:  ICONMAINT     = os.path.join(ART, 'mainticon.png')
 #           ICONSETTINGS  = 'http://aftermathwizard.net/repo/wizard/settings.png'
 # Leave as http:// for default icon
-ICONBUILDS     = 'http://jeds.areshost2.seedr.io/Other/diggz%20wizard/DiggzWizardpngs/build-icon.png'
-ICONMAINT      = 'http://jeds.areshost2.seedr.io/Other/diggz%20wizard/DiggzWizardpngs/mantanence-icon.png'
-ICONAPK        = 'http://jeds.areshost2.seedr.io/Other/diggz%20wizard/DiggzWizardpngs/apkinstaller.png'
-ICONADDONS     = 'http://jeds.areshost2.seedr.io/Other/diggz%20wizard/DiggzWizardpngs/addoninstaller-1.png'
-ICONYOUTUBE    = 'http://jeds.areshost2.seedr.io/Other/diggz%20wizard/DiggzWizardpngs/youtube.png'
-ICONSAVE       = 'http://jeds.areshost2.seedr.io/Other/diggz%20wizard/DiggzWizardpngs/savedata.png'
-ICONTRAKT      = 'http://jeds.areshost2.seedr.io/Other/diggz%20wizard/DiggzWizardpngs/trakt.png'
-ICONREAL       = 'http://jeds.areshost2.seedr.io/Other/diggz%20wizard/DiggzWizardpngs/real-debrid-1.png'
-ICONLOGIN      = 'http://jeds.areshost2.seedr.io/Other/diggz%20wizard/DiggzWizardpngs/login.png'
-ICONCONTACT    = 'http://jeds.areshost2.seedr.io/Other/diggz%20wizard/DiggzWizardpngs/contact%20us.png'
-ICONSETTINGS   = 'http://jeds.areshost2.seedr.io/Other/diggz%20wizard/DiggzWizardpngs/settingsicon.png'
+ICONBUILDS     = 'http://wizardfiles.jdiggz.com/DiggzWizardpngs/build-icon.png'
+ICONMAINT      = 'http://wizardfiles.jdiggz.com/DiggzWizardpngs/mantanence-icon.png'
+ICONAPK        = 'http://wizardfiles.jdiggz.com/DiggzWizardpngs/apk-icon.png'
+ICONADDONS     = 'http://wizardfiles.jdiggz.com/DiggzWizardpngs/addoninstaller-1.png'
+ICONYOUTUBE    = 'http://wizardfiles.jdiggz.com/DiggzWizardpngs/youtube.png'
+ICONSAVE       = 'http://wizardfiles.jdiggz.com/DiggzWizardpngs/savedata.png'
+ICONTRAKT      = 'http://wizardfiles.jdiggz.com/DiggzWizardpngs/trakt.png'
+ICONREAL       = 'http://wizardfiles.jdiggz.com/DiggzWizardpngs/real-debrid-1.png'
+ICONLOGIN      = 'http://wizardfiles.jdiggz.com/DiggzWizardpngs/login.png'
+ICONCONTACT    = 'http://wizardfiles.jdiggz.com/DiggzWizardpngs/contact%20us.png'
+ICONSETTINGS   = 'http://wizardfiles.jdiggz.com/DiggzWizardpngs/settingsicon.png'
 # Hide the ====== seperators 'Yes' or 'No'
 HIDESPACERS    = 'No'
 # Character used in seperator
@@ -52,8 +52,8 @@ SPACER         = '='
 
 # You can edit these however you want, just make sure that you have a %s in each of the
 # THEME's so it grabs the text from the menu item
-COLOR1         = 'crimson'
-COLOR2         = 'white'
+COLOR1         = 'slateblue'
+COLOR2         = 'slateblue'
 # Primary menu items   / %s is the menu item and is required
 THEME1         = '[COLOR '+COLOR1+'][B][I]([COLOR '+COLOR2+']Diggz[/COLOR])[/B][/COLOR] [COLOR '+COLOR2+']%s[/COLOR][/I]'
 # Build Names          / %s is the menu item and is required
@@ -69,7 +69,7 @@ THEME5         = '[COLOR '+COLOR1+']Current Theme:[/COLOR] [COLOR '+COLOR2+']%s[
 # Enable 'Contact' menu item 'Yes' hide or 'No' dont hide
 HIDECONTACT    = 'No'
 # You can add \n to do line breaks
-CONTACT        = ''
+CONTACT        = 'Thank you for choosing Aftermath Wizard.\r\n\r\nContact us on facebook at http://facebook.com'
 #Images used for the contact window.  http:// for default icon and fanart
 CONTACTICON    = 'http://'
 CONTACTFANART  = 'http://'
@@ -101,14 +101,14 @@ REPOZIPURL     = ''
 ### NOTIFICATION WINDOW##################################
 #########################################################
 # Enable Notification screen Yes or No
-ENABLE         = 'Yes'
+ENABLE         = 'No'
 # Url to notification file
-NOTIFICATION   = 'http://jeds.areshost2.seedr.io/Other/diggz%20wizard/wizrdtexts/Diggzwizardnotifications.txt'
+NOTIFICATION   = ''
 # Use either 'Text' or 'Image'
-HEADERTYPE     = 'Text'
-HEADERMESSAGE  = 'Diggz Notification:'
+HEADERTYPE     = ''
+HEADERMESSAGE  = ''
 # url to image if using Image 424x180
 HEADERIMAGE    = ''
 # Background for Notification Window
-BACKGROUND     = 'http://jeds.areshost2.seedr.io/Other/diggz%20wizard/Screenshots/diggzfanart.jpg'
+BACKGROUND     = ''
 #########################################################
