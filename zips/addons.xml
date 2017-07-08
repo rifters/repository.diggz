@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <addons>
-<addon id="plugin.program.diggzwizard" name="Diggz Wizard" version="3.0" provider-name="Diggz">
+<addon id="plugin.program.diggzwizard" name="Diggz Wizard" version="3.5" provider-name="Diggz">
   <requires>
     <import addon="xbmc.python" version="2.1.0"/>
   </requires>
@@ -10,7 +10,7 @@
   <extension point="xbmc.service" library="startup.py" start="startup" />
   <extension point="xbmc.addon.metadata">
     <summary lang="en">Diggz Wizard</summary>
-    <description lang="en">Install and update Diggz Builds</description>
+    <description lang="en">Use this to install and update Diggz builds.</description>
     <platform>all</platform>
   </extension>
 </addon>
