@@ -103,7 +103,7 @@ def get_movie_window(window_type):
                 for item in movies_list:
                     if item != "":
                         ids = ids + str(item[1]) + '\n'
-                batch_add_file_path = "special://home/userdata/addon_data/plugin.video.metalliq/movies_to_add.txt"
+                batch_add_file_path = "special://profile/addon_data/plugin.video.metalliq/movies_to_add.txt"
                 if not xbmcvfs.exists(batch_add_file_path):
                     batch_add_file = xbmcvfs.File(batch_add_file_path, 'w')
                     batch_add_file.write(ids)

@@ -420,8 +420,8 @@ def start_info_actions(infos, params):
                 else: return
         elif info == 'viewsimpleselector':
             if params.get("type"):
-                if params.get("type") == "movie": path = xbmc.translatePath("special://home/userdata/addon_data/script.extendedinfo/simple_selector_movies.txt")
-                elif params.get("type") == "tv": path = xbmc.translatePath("special://home/userdata/addon_data/script.extendedinfo/simple_selector_tvshows.txt")
+                if params.get("type") == "movie": path = xbmc.translatePath("special://profile/addon_data/script.extendedinfo/simple_selector_movies.txt")
+                elif params.get("type") == "tv": path = xbmc.translatePath("special://profile/addon_data/script.extendedinfo/simple_selector_tvshows.txt")
                 else: return
             if xbmcvfs.exists(path):
                 text = read_from_file(path, raw=True)

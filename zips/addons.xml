@@ -151,7 +151,7 @@
 	</extension>
 </addon>
 
-<addon id="script.extendedinfo" name="[COLOR ff0084ff]T[/COLOR]he [COLOR ff0084ff]P[/COLOR]o [COLOR ff0084ff]rta[/COLOR]l" version="420" provider-name="Modded by [COLOR FF8ABEE2]Open[/COLOR][COLOR FF757677]ELEQ[/COLOR], original work by phil65">
+<addon id="script.extendedinfo" name="[COLOR ff0084ff]T[/COLOR]H [COLOR ff0084ff]E[/COLOR]P [COLOR ff0084ff]O[/COLOR]rtal" version="420" provider-name="Modded by [COLOR FF8ABEE2]Open[/COLOR][COLOR FF757677]ELEQ[/COLOR], original work by phil65">
   <requires>
     <import addon="xbmc.python"                     version="2.19.0"/>
     <import addon="plugin.program.super.favourites" version="1.0.48"/>

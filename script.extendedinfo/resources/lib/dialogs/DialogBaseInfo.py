@@ -94,7 +94,7 @@ class DialogBaseInfo(object):
             if selection == 0:
                 if self.type == "TVShow":
                     if dbid:
-                        show_playlist = xbmc.translatePath("special://home/userdata/playlists/video/%s.xsp" % tvdb)
+                        show_playlist = xbmc.translatePath("special://profile/playlists/video/%s.xsp" % tvdb)
                         if os.path.exists(show_playlist):
                             xbmc.executebuiltin("PlayMedia("+show_playlist+")")
                             self.close()
@@ -113,7 +113,7 @@ class DialogBaseInfo(object):
             if selection == 1:
                 if self.type == "TVShow":
                     if dbid:
-                        show_path = xbmc.translatePath("special://home/userdata/addon_data/plugin.video.metalliq/TVShows/%s" % tvdb)
+                        show_path = xbmc.translatePath("special://profile/addon_data/plugin.video.metalliq/TVShows/%s" % tvdb)
                         if os.path.exists(show_path):
                             try:
                                 shutil.rmtree(show_path)
@@ -125,7 +125,7 @@ class DialogBaseInfo(object):
                         xbmc.executebuiltin("RunScript(script.extendedinfo,info=afteradd)")
                 else:
                     if dbid:
-                        movie_path = xbmc.translatePath("special://home/userdata/addon_data/plugin.video.metalliq/Movies/%s" % imdb)
+                        movie_path = xbmc.translatePath("special://profile/addon_data/plugin.video.metalliq/Movies/%s" % imdb)
                         if os.path.exists(movie_path):
                             try:
                                 shutil.rmtree(movie_path)

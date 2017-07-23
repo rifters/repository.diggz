@@ -1,6 +1,6 @@
 v5.0.3
 - Added widget-path for favourited filters, to use: manually change "info=filtered" to "info=filteredwidget" in pluginpath
-- Added thumbnail to filter favouriting (stored in special://home/userdata/addon_data/script.extendedinfo/posters/)
+- Added thumbnail to filter favouriting (stored in special://profile/addon_data/script.extendedinfo/posters/)
 - Added option to clear simple selector (in settings under "Delete cache")
 - Fixed vote-info in extended infoscreen (credits to Midraal)
 

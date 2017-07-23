@@ -79,7 +79,7 @@ def get_season_window(window_type):
         @ch.click(10)
         def play_season_no_resume(self):
             if self.dbid:
-                url = "special://home/userdata/playlists/video/%s.xsp" % self.info.get("tvdb_id", "")
+                url = "special://profile/playlists/video/%s.xsp" % self.info.get("tvdb_id", "")
                 if not os.path.exists(url):
                     url = "plugin://plugin.video.metalliq/tv/play/%s/%s/1/%s" % (self.info.get("tvdb_id", ""), self.info.get("season", ""), SETTING("player_main_tv"))
             else:
