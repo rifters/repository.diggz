@@ -178,9 +178,9 @@ def get_tmdb_window(window_type):
                 self.update(force_update=True)
                 self.getControl(500).selectItem(self.position)
             if selection == 2:
-                if self.type == "tv": url = "plugin://script.qlickplay/?info=playtvtrailer&id=%s" % item_id
-                elif self.type == "episode": url = "plugin://script.qlickplay/?info=playtvtrailer&tvdb_id=%s" % tvdb_id
-                elif self.type == "movie": url = "plugin://script.qlickplay/?info=playtrailer&id=%s" % item_id
+                if self.type == "tv": url = "plugin://script.extendedinfo/?info=playtvtrailer&id=%s" % item_id
+                elif self.type == "episode": url = "plugin://script.extendedinfo/?info=playtvtrailer&tvdb_id=%s" % tvdb_id
+                elif self.type == "movie": url = "plugin://script.extendedinfo/?info=playtrailer&id=%s" % item_id
                 PLAYER.qlickplay(url, listitem=None, dbid=0, window=self)
             if selection == 3:
                 if self.logged_in:
@@ -191,7 +191,7 @@ def get_tmdb_window(window_type):
                             self.getControl(500).selectItem(self.position)
                 else:
                     if self.type == "episode":
-                        path = xbmc.translatePath("special://profile/addon_data/script.qlickplay/exclusions_tvdb.txt")
+                        path = xbmc.translatePath("special://profile/addon_data/script.extendedinfo/exclusions_tvdb.txt")
                         if xbmcvfs.exists(path): content = read_from_file(path, True).split("\n")
                         else: content = []
                         content.append("year - tvdb-id | TVShowTitle")
@@ -212,7 +212,7 @@ def get_tmdb_window(window_type):
                     elif self.type == "tv" or self.type == "episode":
                         xbmc.executebuiltin("RunPlugin(plugin://plugin.video.sickrage?action=addshow&tvdb_id=%s)" % tvdb_id)
                 if self.type == "episode":
-                    path = xbmc.translatePath("special://profile/addon_data/script.qlickplay/exclusions_tvdb.txt")
+                    path = xbmc.translatePath("special://profile/addon_data/script.extendedinfo/exclusions_tvdb.txt")
                     if xbmcvfs.exists(path): content = read_from_file(path, True).split("\n")
                     else: content = []
                     content.append("year - tvdb-id | TVShowTitle")

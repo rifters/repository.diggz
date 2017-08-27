@@ -1,3 +1,8 @@
+v5.0.4
+- Fixed trailer from contextmenu in script interface
+- Fixed error on YouTube-playback
+- Fixed extended info skintegration
+
 v5.0.3
 - Added widget-path for favourited filters, to use: manually change "info=filtered" to "info=filteredwidget" in pluginpath
 - Added thumbnail to filter favouriting (stored in special://profile/addon_data/script.extendedinfo/posters/)
