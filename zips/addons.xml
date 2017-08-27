@@ -204,6 +204,20 @@ For updates check the readme.
   </extension>
 </addon>
 
+<addon id="script.module.pil"
+       name="Python Image Library"
+       version="1.1.7"
+       provider-name="PythonWare">
+  <requires>
+    <import addon="xbmc.python" version="2.1.0"/>
+  </requires>
+  <extension point="xbmc.python.module"
+             library="lib" />
+  <extension point="xbmc.addon.metadata">
+    <platform>all</platform>
+  </extension>
+</addon>
+
 <addon id="script.ustvnow.plus.guide" name="USTVnow Guide" version="1.2.7" provider-name="mhancoc7">
     <requires>
         <import addon="xbmc.python" version="2.19.0"/>
