@@ -238,4 +238,1232 @@ For updates check the readme.
          <website></website>
      </extension>
 </addon>
+
+<addon id="skin.addons" version="5.0.1" name="Addons" provider-name="Tgx">
+    <requires>
+        <import addon="xbmc.gui" version="5.12.0"/>
+        <import addon="script.favourites" version="3.2.0"/>
+        <import addon="script.skinshortcuts" version="0.2.4"/>
+        <import addon="resource.images.weatherfanart.single" version="0.0.4"/>
+        <import addon="resource.images.studios.white" version="0.0.6"/>
+        <import addon="resource.images.recordlabels.white" version="0.0.6"/>
+        <import addon="resource.uisounds.nebula" version="0.0.1"/>
+        <import addon="resource.images.languageflags.colour" version="0.0.2"/>
+        <import addon="script.image.resource.select" version="0.0.5"/>
+        <import addon="script.skin.helper.service" version="1.1.3"/>
+        <import addon="script.skin.helper.backgrounds" version="1.0.21"/>
+        <import addon="script.skin.helper.colorpicker" version="1.0.11"/>
+        <import addon="script.skin.helper.skinbackup" version="1.0.12"/>
+        <import addon="plugin.program.autocompletion" version="1.0.1"/>
+    </requires>
+    <extension point="xbmc.gui.skin" debugging="false">
+        <res width="1920" height="1080" aspect="16:9" default="true" folder="1080i"/>
+    </extension>
+    <extension point="xbmc.addon.metadata">
+        <summary lang="de">Einfacher heller oder dunkler Skin für Full-HD Bildschirme mit vielen Extras.</summary>
+        <summary lang="el">Απλό και πλήρες, φωτεινό ή σκοτεινό κέλυφος, σχεδιασμένο για οθόνες υψηλής ανάλυσης (Full HD).</summary>
+        <summary lang="en">Simple and full-featured light or dark color skin designed for Full HD TV screens.</summary>
+        <summary lang="en_AU">Simple and full-featured light or dark colour skin designed for Full HD TV screens.</summary>
+        <summary lang="en_NZ">Simple and full-featured light or dark color skin designed for Full HD TV screens.</summary>
+        <summary lang="en_US">Simple and full-featured light or dark color skin designed for Full HD TV screens.</summary>
+        <summary lang="es">Un skin simple, de color claro u oscuro, y con todas las funciones, diseñado para televisores Full HD.</summary>
+        <summary lang="fr">Skins clair ou foncé simple et complet conçu pour des écrans TV Full HD.</summary>
+        <summary lang="fr_CA">Habillage simple et complet, de couleur claire ou sombre, conçu pour les écrans à HD intégrale.</summary>
+        <summary lang="he">מעטפת פשוטה ורבת תכונות בצבעים כהים או בהירים המותאמת במיוחד למסכים באבחנת Full HD.</summary>
+        <summary lang="it">Skin dal colore bianco o nero, semplice e completa, progettata per TV Full HD</summary>
+        <summary lang="ko">모든 기능을 지원하는 단순한 스킨으로  밝은 색상과 어두운 색상을 지원하며 Full HD TV 용으로 디자인하였습니다.</summary>
+        <summary lang="lt">Paprasta ir su visomis papildomomis funkcijomis, šviesi arba tamsi teminė išvaizda, sukurta FullHD TV ekranams.</summary>
+        <summary lang="ms">Kulit ringkas dan warna cerah atau gelap berfitur penuh untuk skrin TV HD Penuh.</summary>
+        <summary lang="nl">Eenvoudige en volledig gekenmerkte lichte of donkere skin ontworpen voor Full-HD TV-schermen.</summary>
+        <summary lang="pl">Prosta, w pełni funkcjonalna skóra zawierająca jasny i mroczny motyw, zaprojektowana dla ekranu telewizyjnych Full HD.</summary>
+        <summary lang="pt_BR">Skin simples e completa nas cores lihgt ou dark para telas Full HD TV.</summary>
+        <summary lang="ro">Costum simplu și complet pe alb sau pe negru proiectat pentru ecrane tv de înaltă definiție.</summary>
+        <description lang="de">Einfacher heller oder dunkler Skin für Full-HD Bildschirme mit vielen Extras.</description>
+        <description lang="el">Απλό και πλήρες, φωτεινό ή σκοτεινό κέλυφος, σχεδιασμένο για οθόνες υψηλής ανάλυσης (Full HD).</description>
+        <description lang="en">Simple and full-featured light or dark color skin designed for Full HD TV screens.</description>
+        <description lang="en_AU">Simple and full-featured light or dark colour skin designed for Full HD TV screens.</description>
+        <description lang="en_NZ">Simple and full-featured light or dark color skin designed for Full HD TV screens.</description>
+        <description lang="en_US">Simple and full-featured light or dark color skin designed for Full HD TV screens.</description>
+        <description lang="es">Un skin simple, de color claro u oscuro, y con todas las funciones, diseñado para televisores Full HD.</description>
+        <description lang="fr">Skins clair ou foncé simple et complet conçu pour des écrans TV Full HD.</description>
+        <description lang="fr_CA">Habillage simple et complet, de couleur claire ou sombre, conçu pour les écrans à HD intégrale.</description>
+        <description lang="he">מעטפת פשוטה ורבת תכונות בצבעים כהים או בהירים המותאמת במיוחד למסכים באבחנת Full HD.</description>
+        <description lang="it">Skin dal colore bianco o nero, semplice e completa, progettata per TV Full HD</description>
+        <description lang="ko">모든 기능을 지원하는 단순한 스킨으로  밝은 색상과 어두운 색상을 지원하며 Full HD TV 용으로 디자인하였습니다.</description>
+        <description lang="lt">Paprasta ir su visomis papildomomis funkcijomis, šviesi arba tamsi teminė išvaizda, sukurta FullHD TV ekranams.</description>
+        <description lang="ms">Kulit ringkas dan warna cerah atau gelap berfitur penuh direka untuk skrin TV HD Penuh.</description>
+        <description lang="nl">Eenvoudige en volledig gekenmerkte lichte of donkere skin ontworpen voor Full-HD TV-schermen.</description>
+        <description lang="pl">Prosta, w pełni funkcjonalna skóra zawierająca jasny i mroczny motyw, zaprojektowana dla ekranu telewizyjnych Full HD.</description>
+        <description lang="pt_BR">Skin simples e completa nas cores lihgt ou dark para telas Full HD TV.</description>
+        <description lang="ro">Costum simplu și complet pe alb sau pe negru proiectat pentru ecrane tv de înaltă definiție.</description>
+        <disclaimer lang="en">This skin does not work on Apple Tv 2</disclaimer>
+        <disclaimer lang="it">Questa skin non funziona su Apple Tv 2</disclaimer>
+        <license>Creative Commons Attribution-ShareAlike 3.0 Unported License</license>
+        <forum>http://forum.kodi.tv/forumdisplay.php?fid=211</forum>
+        <source>https://github.com/Tgxcorporation/skin.nebula</source>
+        <website>https://github.com/Tgxcorporation/skin.nebula/wiki</website>
+        <platform>all</platform>
+        <assets>
+            <icon>icon.png</icon>
+            <fanart>fanart.jpg</fanart>
+            <screenshot>screenshots/screenshot01.jpg</screenshot>
+            <screenshot>screenshots/screenshot02.jpg</screenshot>
+            <screenshot>screenshots/screenshot03.jpg</screenshot>
+            <screenshot>screenshots/screenshot04.jpg</screenshot>
+            <screenshot>screenshots/screenshot05.jpg</screenshot>
+            <screenshot>screenshots/screenshot06.jpg</screenshot>
+            <screenshot>screenshots/screenshot07.jpg</screenshot>
+            <screenshot>screenshots/screenshot08.jpg</screenshot>
+            <screenshot>screenshots/screenshot09.jpg</screenshot>
+            <screenshot>screenshots/screenshot10.jpg</screenshot>
+        </assets>
+    </extension>
+</addon>
+
+<addon
+  id="skin.diggzandroidgaming"
+  version="420"
+  name="Diggz Android Gaming"
+  provider-name="Jason Diggz, Helly">
+  <requires>
+    <import addon="xbmc.gui" version="5.12.0"/>
+	  <import addon="script.favourites" version="6.0.3"/>
+	  <import addon="service.skin.widgets" version="0.0.32"/>
+	  <import addon="service.library.data.provider" version="0.1.6"/>
+	  <import addon="script.randomandlastitems" version="2.2.2"/>
+  </requires>
+  <extension
+    point="xbmc.gui.skin"
+    debugging="false"
+    effectslowdown="1.0">
+    <res width="1280" height="720" aspect="16:9" default="true" folder="720p" />
+  </extension>
+  <extension point="xbmc.addon.metadata">
+    <summary lang="en">eXtended MOD of Confluence skin originally by Jezz_X and CCM by Mudislander.</summary>
+    <summary lang="en_US">eXtended MOD of Confluence skin originally by Jezz_X and CCM by Mudislander.</summary>
+    <summary lang="nl">Uitgebreide MOD van Confluence skin origineel door Jezz_X en CCM door Mudislander.</summary>
+    <description lang="en">Xonfluence is a MOD of Confluence to enable a greater degree of user customisation to the default skin (based by Mudislander's CCM).</description>
+    <description lang="en_US">Xonfluence is a MOD of Confluence to enable a greater degree of user customisation to the default skin (based by Mudislander's CCM).</description>
+    <description lang="nl">Xonfluence is een MOD van Confluence om een grotere aanpassingsmogelijkheid te geven ten opzichten van de standaard skin (gebaseerd op Mudislander's CCM).</description>
+    <disclaimer lang="en">You break it - You get to keep the pieces</disclaimer>
+    <disclaimer lang="en_US">You break it - You get to keep the pieces</disclaimer>
+    <disclaimer lang="nl">Wie zijn billen brandt - moet op de blaren zitten</disclaimer>
+    <platform>all</platform>
+    <assets>
+      <icon>resources/icon.png</icon>
+      <fanart>resources/fanart.jpg</fanart>
+	    <screenshot>resources/screenshot-01.jpg</screenshot>
+	    <screenshot>resources/screenshot-02.jpg</screenshot>
+	    <screenshot>resources/screenshot-03.jpg</screenshot>
+	    <screenshot>resources/screenshot-04.jpg</screenshot>
+	    <screenshot>resources/screenshot-05.jpg</screenshot>
+	    <screenshot>resources/screenshot-06.jpg</screenshot>
+	    <screenshot>resources/screenshot-07.jpg</screenshot>
+	    <screenshot>resources/screenshot-08.jpg</screenshot>
+	    <screenshot>resources/screenshot-09.jpg</screenshot>
+    </assets>
+    <news>See changelog for latest changes</news>
+  </extension>
+</addon>
+
+<addon
+  id="skin.diggzkids"
+  version="420"
+  name="Diggz Kids"
+  provider-name="Jason Diggz, Helly">
+  <requires>
+    <import addon="xbmc.gui" version="5.12.0"/>
+	  <import addon="script.favourites" version="6.0.3"/>
+	  <import addon="service.skin.widgets" version="0.0.32"/>
+	  <import addon="service.library.data.provider" version="0.1.6"/>
+	  <import addon="script.randomandlastitems" version="2.2.2"/>
+  </requires>
+  <extension
+    point="xbmc.gui.skin"
+    debugging="false"
+    effectslowdown="1.0">
+    <res width="1280" height="720" aspect="16:9" default="true" folder="720p" />
+  </extension>
+  <extension point="xbmc.addon.metadata">
+    <summary lang="en">eXtended MOD of Confluence skin originally by Jezz_X and CCM by Mudislander.</summary>
+    <summary lang="en_US">eXtended MOD of Confluence skin originally by Jezz_X and CCM by Mudislander.</summary>
+    <summary lang="nl">Uitgebreide MOD van Confluence skin origineel door Jezz_X en CCM door Mudislander.</summary>
+    <description lang="en">Xonfluence is a MOD of Confluence to enable a greater degree of user customisation to the default skin (based by Mudislander's CCM).</description>
+    <description lang="en_US">Xonfluence is a MOD of Confluence to enable a greater degree of user customisation to the default skin (based by Mudislander's CCM).</description>
+    <description lang="nl">Xonfluence is een MOD van Confluence om een grotere aanpassingsmogelijkheid te geven ten opzichten van de standaard skin (gebaseerd op Mudislander's CCM).</description>
+    <disclaimer lang="en">You break it - You get to keep the pieces</disclaimer>
+    <disclaimer lang="en_US">You break it - You get to keep the pieces</disclaimer>
+    <disclaimer lang="nl">Wie zijn billen brandt - moet op de blaren zitten</disclaimer>
+    <platform>all</platform>
+    <assets>
+      <icon>resources/icon.png</icon>
+      <fanart>resources/fanart.jpg</fanart>
+	    <screenshot>resources/screenshot-01.jpg</screenshot>
+	    <screenshot>resources/screenshot-02.jpg</screenshot>
+	    <screenshot>resources/screenshot-03.jpg</screenshot>
+	    <screenshot>resources/screenshot-04.jpg</screenshot>
+	    <screenshot>resources/screenshot-05.jpg</screenshot>
+	    <screenshot>resources/screenshot-06.jpg</screenshot>
+	    <screenshot>resources/screenshot-07.jpg</screenshot>
+	    <screenshot>resources/screenshot-08.jpg</screenshot>
+	    <screenshot>resources/screenshot-09.jpg</screenshot>
+    </assets>
+    <news>See changelog for latest changes</news>
+  </extension>
+</addon>
+
+<addon
+  id="skin.diggzpc64gaming"
+  version="420"
+  name="Diggz Windows64 Gaming"
+  provider-name="Jason Diggz, Helly">
+  <requires>
+    <import addon="xbmc.gui" version="5.12.0"/>
+	  <import addon="script.favourites" version="6.0.3"/>
+	  <import addon="service.skin.widgets" version="0.0.32"/>
+	  <import addon="service.library.data.provider" version="0.1.6"/>
+	  <import addon="script.randomandlastitems" version="2.2.2"/>
+  </requires>
+  <extension
+    point="xbmc.gui.skin"
+    debugging="false"
+    effectslowdown="1.0">
+    <res width="1280" height="720" aspect="16:9" default="true" folder="720p" />
+  </extension>
+  <extension point="xbmc.addon.metadata">
+    <summary lang="en">eXtended MOD of Confluence skin originally by Jezz_X and CCM by Mudislander.</summary>
+    <summary lang="en_US">eXtended MOD of Confluence skin originally by Jezz_X and CCM by Mudislander.</summary>
+    <summary lang="nl">Uitgebreide MOD van Confluence skin origineel door Jezz_X en CCM door Mudislander.</summary>
+    <description lang="en">Xonfluence is a MOD of Confluence to enable a greater degree of user customisation to the default skin (based by Mudislander's CCM).</description>
+    <description lang="en_US">Xonfluence is a MOD of Confluence to enable a greater degree of user customisation to the default skin (based by Mudislander's CCM).</description>
+    <description lang="nl">Xonfluence is een MOD van Confluence om een grotere aanpassingsmogelijkheid te geven ten opzichten van de standaard skin (gebaseerd op Mudislander's CCM).</description>
+    <disclaimer lang="en">You break it - You get to keep the pieces</disclaimer>
+    <disclaimer lang="en_US">You break it - You get to keep the pieces</disclaimer>
+    <disclaimer lang="nl">Wie zijn billen brandt - moet op de blaren zitten</disclaimer>
+    <platform>all</platform>
+    <assets>
+      <icon>resources/icon.png</icon>
+      <fanart>resources/fanart.jpg</fanart>
+	    <screenshot>resources/screenshot-01.jpg</screenshot>
+	    <screenshot>resources/screenshot-02.jpg</screenshot>
+	    <screenshot>resources/screenshot-03.jpg</screenshot>
+	    <screenshot>resources/screenshot-04.jpg</screenshot>
+	    <screenshot>resources/screenshot-05.jpg</screenshot>
+	    <screenshot>resources/screenshot-06.jpg</screenshot>
+	    <screenshot>resources/screenshot-07.jpg</screenshot>
+	    <screenshot>resources/screenshot-08.jpg</screenshot>
+	    <screenshot>resources/screenshot-09.jpg</screenshot>
+    </assets>
+    <news>See changelog for latest changes</news>
+  </extension>
+</addon>
+
+<addon id="skin.diggzx1" version="420" name="Diggz X1" provider-name="Nessus, Diggz">
+  <requires>
+		<import addon="xbmc.gui" version="5.12.0"/>
+		<import addon="script.skinshortcuts" version="1.0.17"/>
+		<import addon="script.skin.helper.service" version="1.1.3"/>
+		<import addon="script.extendedinfo" version="5.6.0"/>
+		<import addon="service.library.data.provider" version="0.3.0"/>
+		<import addon="script.skin.helper.widgets" version="1.0.22"/>
+	</requires>
+	<extension point="xbmc.gui.skin" effectslowdown="0.75" debugging="false">
+	    <res width="1280" height="720" aspect="16:9" default="true" folder="720p"/>
+	</extension>
+  <extension point="xbmc.addon.metadata">
+    <summary lang="af">'n GUI vir Kodi Media Sentrum</summary>
+    <summary lang="ar">واجهة رسومية لمركز الوسائط Kodi</summary>
+    <summary lang="bg">Потребителски интерфейс за Kodi</summary>
+    <summary lang="ca">Una interfície gràfica per a l'Kodi</summary>
+    <summary lang="da">En GUI til Kodi Media Center</summary>
+    <summary lang="de">Ein GUI für das Kodi Media Center</summary>
+    <summary lang="el">Ένα Γραφικό Περιβάλλον για το Kodi</summary>
+    <summary lang="en">A GUI for Kodi Media Center</summary>
+    <summary lang="en_AU">A GUI for Kodi Media Centre</summary>
+    <summary lang="en_NZ">A GUI for Kodi Media Centre</summary>
+    <summary lang="en_US">A GUI for Kodi Media Center</summary>
+    <summary lang="es">Una interfaz gráfica para Kodi</summary>
+    <summary lang="fr">Un thème pour Kodi Media Center</summary>
+    <summary lang="fr_CA">Une IUG pour le centre multimédia Kodi </summary>
+    <summary lang="gl">Un GUI para Centro de Medios Kodi</summary>
+    <summary lang="he">ממשק משתמש עבור Kodi מדיה סנטר</summary>
+    <summary lang="hu">Felszín az  Kodi Média centerhez</summary>
+    <summary lang="it">Un Interfaccia per Kodi Media Center</summary>
+    <summary lang="ja">Kodi メディアセンター用 GUI</summary>
+    <summary lang="ko">Kodi Media Center를 위한 그래픽 사용자 인터페이스</summary>
+    <summary lang="lt">Kodi media centro GUI</summary>
+    <summary lang="ms">GUI untuk Pusat Media Kodi</summary>
+    <summary lang="nl">Een gebruikersinterface voor Kodi Media Center </summary>
+    <summary lang="pl">Interfejs użytkownika dla Kodi Media Center</summary>
+    <summary lang="pt">Uma Interface para o Centro de Média Kodi</summary>
+    <summary lang="pt_BR">Uma interface gráfica para o Kodi Media Center</summary>
+    <summary lang="ru">Обложка для Kodi</summary>
+    <summary lang="sl">Uporabniški vmesnik za medijsko središče Kodi</summary>
+    <summary lang="sv">Ett grafiskt användargränssnitt för Kodi</summary>
+    <summary lang="th">ส่วนติดต่อผู้ใช้ สำหรับศูนย์รวมสื่อ Kodi</summary>
+    <summary lang="tr">Kodi Media Center İçin Arayüz</summary>
+    <summary lang="zh">Kodi媒体中心的一个图形用户界面</summary>
+    <summary lang="zh_TW">一個 Kodi 多媒體中心的圖形介面</summary>
+    <description lang="bg">X1 е потребителски интерфейс за Kodi. Целта му е да Ви удовлетвори в максимална степен, чрез своя уникален, бърз и удобен интерфейс, като същевременно не Ви лишава от най-новите функционалности на Kodi.</description>
+    <description lang="de">X1 ist eine Benutzeroberfläche für das Kodi Media Center. Das Ziel von X1 ist es, Ihr Unterhaltungserlebnis mit der schnellen, einzigartigen und einheitlichen Oberfläche zusammen mit den neusten Kodi-Features zu maximieren.</description>
+    <description lang="el">Το X1 είναι ένα Γραφικό Περιβάλλον Εργασίας (GUI) για το Κέντρο Πολυμέσων Kodi. Στόχος του X1 είναι να μεγιστοποιήσει την ψυχαγωγική σας εμπειρία μέσω του γρήγορου, μοναδικού και ενοποιημένου περιβάλλοντός του, που περιλαμβάνει όλες τις νέες λειτουργίες του Kodi.</description>
+    <description lang="en">This is the 6th generation of X1 skin for Kodi. X1 6 is aiming to maximize your Kodi entertainment experience with its NEW Unique, Clean and Elegant interface while providing users a highly customization level and lots of cool features!</description>
+    <description lang="en_AU">This is the 6th generation of X1 skin for Kodi. X1 6 is aiming to maximize your Kodi entertainment experience with its NEW Unique, Clean and Elegant interface while providing users a highly customization level and lots of cool features!</description>
+    <description lang="en_NZ">This is the 6th generation of X1 skin for Kodi. X1 6 is aiming to maximize your Kodi entertainment experience with its NEW Unique, Clean and Elegant interface while providing users a highly customization level and lots of cool features!</description>
+    <description lang="en_US">This is the 6th generation of X1 skin for Kodi. X1 6 is aiming to maximize your Kodi entertainment experience with its NEW Unique, Clean and Elegant interface while providing users a highly customization level and lots of cool features!</description>
+    <description lang="es">X1 es una interfaz gráfica para Kodi. La meta de X1 es maximizar la experiencia de Kodi con su interfaz única, rápida y unificada y las últimas novedades de Kodi. </description>
+    <description lang="fr">X1 est un thème pour Kodi Media Center. Le but de X1 est de maximiser votre expérience Kodi avec son interface rapide, fluide et unique pour toutes les fonctionnalités d'Kodi.</description>
+    <description lang="fr_CA">X1 est une IUG pour le centre multimédia Kodi. Le but de X1 est de maximiser votre expérience de divertissement Kodi avec une interface rapide, unique et unifiée, ainsi qu'avec toutes les dernières fonctions de Kodi. </description>
+    <description lang="gl">X1 e unha GUI para o Centro Multimedia Kodi. O obxectivo de X1 é que goce ó máximo da experiencia en entretemento no Kodi, unha interface única e unificada xunto con todas as funcións do Kodi.</description>
+    <description lang="he">המעטפת X1 היא ממשק משתמש עבור Kodi. מטרת X1 היא להעצים את חוויית השימוש ב־Kodi בעזרת ממשק מהיר, ייחודי ואחיד עם כל היכולות החדשות של Kodi.</description>
+    <description lang="hu">A X1 egy felszín az Kodi média centerhez. A X1 célja hogy maximalizálja az Kodi élvezeti értékét az egyedi, gyors és egyszerű felülettel és az Kodi legújabb fejlesztéseinek felhasználásával.</description>
+    <description lang="it">X1 è un'interfaccia per Kodi Media Center. L'obiettivo di X1 è di massimizzare la tua esperienza di intrattenimento con Kodi con la sua interfaccia veloce, unica ed unificata insieme alle nuove caratteristiche di Kodi.</description>
+    <description lang="ko">X1는 Kodi Media Center의 그래픽 인터페이스입니다. X1의 목표는 모든 최신 기능들에 대해 빠르고 독특하며 일관된 인터페이스를 제공하여 Kodi 엔터테인먼트 경험을 최대화하는데 있습니다.</description>
+    <description lang="lt">X1 Kodi Media Center GUI. X1 tikslas yra maksimaliai padidinti Kodi pramogą, unikali ir vieninga sąsaja kartu su visomis naujausiomis Kodi funkcijomis.</description>
+    <description lang="ms">X1 ialah GUI untuk Pusat Media Kodi. Matlamat X1 ialah untuk pengalaman hiburan Kodi yang maksimum dengan antaramuka yang pantas, unik dan sepadu bersama-sama dengan semua fitur terkini Kodi.</description>
+    <description lang="nl">X1 is een gebruikersinterface voor Kodi Media Center. Het doel van X1 is jouw Kodi entertainmentbeleving te maximaliseren met zijn snelle, unieke en universele interface samen met de laatste mogelijkheden van Kodi</description>
+    <description lang="pl">X1 to graficzny interfejs użytkownika dla Kodi Media Center. Celem X1 jest dostarczenie maksymalnej wygody użytkowania Kodi z wykorzystaniem szybkiego, unikalnego oraz ujednoliconego interfejsu, wraz z wszystkimi najnowszymi funkcjonalnościami Kodi.</description>
+    <description lang="pt_BR">X1 é uma interface gráfica para o Kodi. A meta de X1 é maximizar sua experiência de entretenimento com o Kodi através de sua interface única, rápida e integrada com todos os últimos recursos do Kodi.</description>
+    <description lang="ru">X1 - это обложка для Kodi. Ee быстрый, неповторимый и законченный интерфейс вместе возможностями Kodi позволят вам получить максимальное удовольствие от вашей цифровой коллекции.</description>
+    <description lang="sv">X1 är ett GUI för Kodi Media Center. Syftet med X1 är att fullborda din Kodi upplevelse med ett snabbt, unikt och samlat gränssnitt tillsammans med de allra senaste funktionerna av Kodi.</description>
+    <description lang="tr">X1, Kodi Media Center için bir GKA'dır. X1'nun hedefi, hızlı ve benzersiz arayüzüyle, Kodi eğlence deneyiminizi en son ve bütün özellikleriyle maksimuma çıkarmaktır.</description>
+    <description lang="zh">X1是一个Kodi媒体中心的图形界面. X1的目标是通过快速, 独特和统一的界面以及最新的Kodi特性, 来最大化你的Kodi娱乐体验.</description>
+    <disclaimer lang="af">Muis gebruik word nie ondersteun</disclaimer>
+    <disclaimer lang="ar">غير معتمد استخدام الماوس</disclaimer>
+    <disclaimer lang="bg">Ползването на мишка не се поддържа</disclaimer>
+    <disclaimer lang="ca">L'ús del ratolí no està suportat</disclaimer>
+    <disclaimer lang="da">Mus understøttes ikke</disclaimer>
+    <disclaimer lang="de">Verwendung der Maus wird nicht unterstützt</disclaimer>
+    <disclaimer lang="el">Χωρίς υποστήριξη για ποντίκι</disclaimer>
+    <disclaimer lang="en">Mouse usage is not supported</disclaimer>
+    <disclaimer lang="en_AU">Mouse usage is not supported</disclaimer>
+    <disclaimer lang="en_NZ">Mouse usage is not supported</disclaimer>
+    <disclaimer lang="en_US">Mouse usage is not supported</disclaimer>
+    <disclaimer lang="es">El uso de ratón no esta soportado</disclaimer>
+    <disclaimer lang="fr">L'utilisation de la souris n'est pas supportée.</disclaimer>
+    <disclaimer lang="fr_CA">L'utilisation de la souris n'est pas prise en charge</disclaimer>
+    <disclaimer lang="gl">Uso do rato non soportado</disclaimer>
+    <disclaimer lang="he">אין תמיכה בעכבר</disclaimer>
+    <disclaimer lang="hu">Egér használata nem támogatott</disclaimer>
+    <disclaimer lang="it">L'utilizzo del mouse non è supportato</disclaimer>
+    <disclaimer lang="ko">마우스 지원 안 함</disclaimer>
+    <disclaimer lang="lt">Pelės naudojimas nepalaikomas</disclaimer>
+    <disclaimer lang="mk">Користењето на глувче не е поддржано</disclaimer>
+    <disclaimer lang="ms">Penggunaan tetikus tidak disokong</disclaimer>
+    <disclaimer lang="nl">Het gebruik van een muis wordt niet ondersteund</disclaimer>
+    <disclaimer lang="pl">Brak obsługi myszy</disclaimer>
+    <disclaimer lang="pt">Não é possível utilizar o rato</disclaimer>
+    <disclaimer lang="pt_BR">Uso de mouse não é suportado</disclaimer>
+    <disclaimer lang="ru">Использование мыши не поддерживается</disclaimer>
+    <disclaimer lang="sl">Uporaba miške ni podprta</disclaimer>
+    <disclaimer lang="sv">Att använda musen fungerar inte</disclaimer>
+    <disclaimer lang="th">ไม่รองรับการใช้งานด้วยเมาท์</disclaimer>
+    <disclaimer lang="tr">Fare kullanımı desteklenmiyor</disclaimer>
+    <disclaimer lang="zh">不支持使用鼠标</disclaimer>
+    <disclaimer lang="zh_TW">不支援使用滑鼠</disclaimer>
+    <platform>all</platform>
+    <license>Creative Commons Attribution-NonCommercial-Share Alike 4.0 International License</license>
+    <forum>http://forum.kodi.tv/forumdisplay.php?fid=198</forum>
+    <email>nessus85100 at hotmail dot com</email>
+    <source>https://github.com/Nessus85100/X1.6</source>
+    <news>For a full list of changes visit https://github.com/Nessus85100/X1.6/commits/master</news>
+		<assets>
+			<icon>resources/icon.png</icon>
+			<fanart>resources/fanart.jpg</fanart>
+			<screenshot>resources/screenshot-01.jpg</screenshot>
+			<screenshot>resources/screenshot-02.jpg</screenshot>
+			<screenshot>resources/screenshot-03.jpg</screenshot>
+			<screenshot>resources/screenshot-04.jpg</screenshot>
+			<screenshot>resources/screenshot-05.jpg</screenshot>
+			<screenshot>resources/screenshot-06.jpg</screenshot>
+			<screenshot>resources/screenshot-07.jpg</screenshot>
+			<screenshot>resources/screenshot-08.jpg</screenshot>
+			<screenshot>resources/screenshot-09.jpg</screenshot>
+			<screenshot>resources/screenshot-10.jpg</screenshot>
+		</assets>
+  </extension>
+</addon>
+
+<addon
+  id="skin.diggzxxx"
+  version="420"
+  name="Diggz XXX"
+  provider-name="Helly">
+  <requires>
+    <import addon="xbmc.gui" version="5.12.0"/>
+	  <import addon="script.favourites" version="6.0.3"/>
+	  <import addon="service.skin.widgets" version="0.0.32"/>
+	  <import addon="service.library.data.provider" version="0.1.6"/>
+	  <import addon="script.randomandlastitems" version="2.2.2"/>
+  </requires>
+  <extension
+    point="xbmc.gui.skin"
+    debugging="false"
+    effectslowdown="1.0">
+    <res width="1280" height="720" aspect="16:9" default="true" folder="720p" />
+  </extension>
+  <extension point="xbmc.addon.metadata">
+    <summary lang="en">eXtended MOD of Confluence skin originally by Jezz_X and CCM by Mudislander.</summary>
+    <summary lang="en_US">eXtended MOD of Confluence skin originally by Jezz_X and CCM by Mudislander.</summary>
+    <summary lang="nl">Uitgebreide MOD van Confluence skin origineel door Jezz_X en CCM door Mudislander.</summary>
+    <description lang="en">Xonfluence is a MOD of Confluence to enable a greater degree of user customisation to the default skin (based by Mudislander's CCM).</description>
+    <description lang="en_US">Xonfluence is a MOD of Confluence to enable a greater degree of user customisation to the default skin (based by Mudislander's CCM).</description>
+    <description lang="nl">Xonfluence is een MOD van Confluence om een grotere aanpassingsmogelijkheid te geven ten opzichten van de standaard skin (gebaseerd op Mudislander's CCM).</description>
+    <disclaimer lang="en">You break it - You get to keep the pieces</disclaimer>
+    <disclaimer lang="en_US">You break it - You get to keep the pieces</disclaimer>
+    <disclaimer lang="nl">Wie zijn billen brandt - moet op de blaren zitten</disclaimer>
+    <platform>all</platform>
+    <assets>
+      <icon>resources/icon.png</icon>
+      <fanart>resources/fanart.jpg</fanart>
+	    <screenshot>resources/screenshot-01.jpg</screenshot>
+	    <screenshot>resources/screenshot-02.jpg</screenshot>
+	    <screenshot>resources/screenshot-03.jpg</screenshot>
+	    <screenshot>resources/screenshot-04.jpg</screenshot>
+	    <screenshot>resources/screenshot-05.jpg</screenshot>
+	    <screenshot>resources/screenshot-06.jpg</screenshot>
+	    <screenshot>resources/screenshot-07.jpg</screenshot>
+	    <screenshot>resources/screenshot-08.jpg</screenshot>
+	    <screenshot>resources/screenshot-09.jpg</screenshot>
+    </assets>
+    <news>See changelog for latest changes</news>
+  </extension>
+</addon>
+
+<addon
+    id="skin.eminence.2.mod.Krypton"
+    version="2.4.2"
+    name="Eminence 2.0 MOD"
+    provider-name="jurialmunkey - Mod by Guilouz - Mod by Alanon">
+    <requires>
+        <import addon="xbmc.gui" version="5.12.0"/>
+        <import addon="script.skinshortcuts" version="1.0.17"/>
+        <import addon="script.skin.helper.service" version="1.1.16"/>
+		<import addon="script.skin.helper.widgets" version="1.0.28"/>
+		<import addon="script.skin.helper.colorpicker" version="1.0.12"/>
+        <import addon="script.extendedinfo" version="5.0.0"/>
+        <import addon="script.image.resource.select" version="0.0.5"/>
+        <import addon="plugin.program.autocompletion" version="1.0.1"/>
+    </requires>
+    <extension point="xbmc.gui.skin" effectslowdown="1.00" debugging="false">
+        <res width="1920" height="1080" aspect="16:9" default="true" folder="16x9" />
+    </extension>
+    <extension point="xbmc.addon.metadata">
+        <platform>all</platform>
+        <summary lang="en">Clean, clear, simple, modern.</summary>
+        <summary lang="fr">Clair, simple et moderne.</summary>
+        <description lang="en">Eminence is a skin that aims to be clean, clear, simple and modern.</description>
+        <description lang="fr">Eminence est un thème qui vise à être clair, simple et moderne.</description>
+		<assets>
+		 	<icon>icon.png</icon>
+ 			<fanart>fanart.jpg</fanart>
+			<screenshot>extras/viewthumbs/56.jpg</screenshot>
+ 			<screenshot>extras/viewthumbs/521.jpg</screenshot>
+ 			<screenshot>extras/viewthumbs/600.jpg</screenshot>
+ 			<screenshot>extras/viewthumbs/506.jpg</screenshot>
+ 			<screenshot>extras/viewthumbs/52.jpg</screenshot>
+ 			<screenshot>extras/viewthumbs/159.jpg</screenshot>
+		</assets>
+		<news> Changelog:
+
+		[B]2.4.2[/B]
+		1. Huge viewtype overhaul.
+		2. Showcase fix.
+		3. RSS font size enlargement.
+		4. Ported Settings screen.
+		5. Ported Showcase Widget.
+		6. Tweaks to the info screen.
+		7. Small OSD fix.
+		8. Small Hub fix.
+		9. Script duration updates.
+
+		[B]2.4.1[/B]
+		1. Fixed widget type bug.
+		2. Fix for viewtype lock.
+
+		[B]2.4[/B]
+		1. Further viewtype fixes.
+		2. Music artwork overhaul.
+		3. Add-on Info dialogue tweaks.
+		4. Light theme info fix.
+		5. Light theme busy dialogue tweak.
+		6. Set Icon fix.
+		7. Added manfeed's Videolyrics Plus.
+		8. Showcase tweaks.
+		9. Tweaked playlist background options.
+		10. Added Low List view.
+		11. Rotation label bugfix.
+		12. Support for Artwork Beef add-on.
+		13. Skin Backup workaround.
+		14. French translation overhaul (by Kelexel)
+		15. Light theme dark interface tweaks.
+		16. Info and flags redundancy fixes.
+		17. Caching OSD fix.
+
+		[B]2.3.9.1[/B]
+		1. Add-on browsing quick-fix.
+
+		[B]2.3.9[/B]
+		1. Busy Dialog tweak.
+		2. Tweaked viewtypes conditions.
+		3. Fixed add-on loading artefacts.
+		4. Small log error fixes (syntax).
+		5. Home menu header is now hideable.
+		6. Fixed logo and flags bugs.
+		7. Video Info ratings tweak.
+		8. Video Info darken effect.
+		9. QuickNav tweak.
+		10. Subtitle Sync tweak.
+		11. Added Hebrew translation (scofield272)!
+
+		[B]2.3.8[/B]
+		1. Context menu support for Library Editor Script.
+		2. Context menu support for SimplePlaylists.
+		3. PVR OSD fixes.
+		4. Darkened the dim option.
+		5. Random Backgrounds fix.
+		6. Scrollbar fixes.
+		7. Another attempt at RSS animation fix.
+		8. OSD Logo fix.
+		9. Poster Border fix.
+
+		[B]2.3.7[/B]
+		1. RSS animation tweaks.
+		2. RightList artist thumbs fix.
+		3. LiveTV OSD fix.
+		4. Flag fallbacks fixes.
+		5. Added plot outline option.
+		6. Alternate RightList for music tweak.
+		7. RightList for video content.
+
+		[B]2.3.6[/B]
+		1. Added a duration setting for home widgets.
+		2. Hub widget fixes.
+
+		[B]2.3.5[/B]
+		1. RightList tweaks.
+		2. Flags tweaks.
+		3. Spanish translation added!
+
+		[B]2.3.4[/B]
+		1. RightList fixes.
+		2. Skin settings reorganisation.
+		3. Fixes for the French translation.
+		4. Significant Hub widget improvements.
+
+		[B]2.3.3[/B]
+		1. Updated a required add-on listing.
+		2. Added a preliminary RightList view.
+		3. Decreased the Home gradient.
+		4. Fixes for the French translation.
+		5. Disabled Black and Sollid colour themes (for now).
+
+		[B]2.3.2[/B]
+		1. Added a vertical/horizontal context menu switch.
+		2. Widget handling improved.
+		3. RSS bar for Text Only home.
+
+		[B]2.3.1[/B]
+		1. More music views.
+		2. Updated French strings (Thanks to Kelexel!)
+		3. Scrollbar fixes.
+		4. Skin performance fixes.
+		5. User rating fix.
+		6. Fulscreen setting added.
+
+		[B]2.3[/B]
+		1. Improved extrathumbs handling.
+		2. Improved the new context menu.
+		3. Improved rating icons.
+		4. Improved userratings.
+		5. Added an info menu in the PVR OSD.
+		6. Added screenshots for the addon.xml.
+		7. Default highlight is back to blue.
+		8. Dependencies version bump.
+		9. Updated manfeed's lyrics to V2.
+		10. Show/Hide CD case option.
+		11. Artist logo improvements.
+		12. Music OSD bugfix.
+		13. Adjusted the skin background colour effects.
+
+		[B]2.2.7[/B]
+		1. Added a new context menu (testing!).
+		2. Added a rotating backgrounds timer.
+		3. Added extrathumbs support.
+		4. Addon settings button fixes.
+
+		[B]2.2.6[/B]
+		1. QuickNav fixes.
+		2. More PVR fixes.
+		3. Other small fixes.
+
+		[B]2.2.5[/B]
+		1. Better mouse support for the skin settings.
+		2. Subtitle menu fixes.
+		3. Improved english language strings.
+		4. Several small PVR fixes and tweaks.
+
+		[B]2.2.4[/B]
+		1. Added setting for onback command.
+		2. Small language fix.
+
+		[B]2.2.3[/B]
+		1. Tweaks for the light colourscheme.
+		2. Version bump for the github experiment.
+
+		[B]2.2.2[/B]
+		1. Added an opacity setting for the OSD.
+
+		[B]2.2.1[/B]
+		1. Added a clickable seekbar.
+		2. Added new colour themes.
+		3. Shortened the skin name.
+		4. Added new icons.
+		5. Tweaked the subtitles menu.
+		6. Small fixes.
+
+		[B]2.2[/B]
+		1. Added a custom dialog for the view selector.
+		2. Added new selector thumbnails.
+		3. Added "Plain List" view.
+		4. Added "Lovefilm" view.
+		5. Added "Info List 3" view.
+		6. Added "Medium Icons" view.
+		7. Added an improved NextUp PostPlay skin.
+		8. Added "disc.png" artwork for Music OSD.
+		9. Added more flags settings.
+		10. Added Director/Revenue info for the movie library.
+		11. Added Forced Views for most content types.
+		12. Fixed hub logos.
+		13. Fixed movieset overlay info.
+		14. Fixed subtitle dialog behaviour.
+		15. Fixed some minor dialogs.
+		16. General speed improvements.
+		17. Improved Showcase posters.
+		18. Improved video thumbs.
+		19. Improved Header colours.
+		20. Improved hub back actions.
+		21. Improved the Line Labels.
+
+		[B]2.1[/B]
+		1. Added manfeed's lyrics.
+		2. Fixes for Hub widgets.
+		3. Fixes for weather.
+		4. Added music genre and record label resources.
+		5. Added record label icons in dialog infos.
+		6. Refined view types and categories.
+		7. Added the old Hub menu as an option.
+		8. Improved QuickNav and submenu handling.
+		9. Functional Genre widget.
+
+		[B]2.0.9[/B]
+		1. Some stubborn bugs squashed.
+
+		[B]2.0.8[/B]
+		1. Fixed dialog buttons.
+		2. Fixed playlist dialog.
+		3. Added some new animations.
+		4. Mouse supported submenu.
+
+		[B]2.0.7[/B]
+		1. Small fixes.
+
+		[B]2.0.6[/B]
+		1. Added a fake disc with writing in Music OSD.
+		2. Repaired the repeat button.
+		3. Removed duplicate spinner textures.
+		4. Added more dependencies.
+		5. Settings window shortcuts for OpenELEC, LibreELEC, and OSMC.
+		6. Added a record button to the PVR OSD.
+		7. Added Kodi's Privacy Policy display.
+		8. Code updates.
+
+		[B]2.0.5[/B]
+		1. Tweaked the cast list.
+		2. Added and improved skin dependencies.
+
+		[B]2.0.4[/B]
+		1. Color Picker fix.
+
+		[B]2.0.3[/B]
+		1. Power menu fix.
+		2. ColorPicker fixes.
+		3. Moved the busy spinner.
+		4. Moved the user ratings under the clock.
+
+		[B]2.0.2[/B]
+		1. Revert header change.
+		2. New cast info in the OSD.
+		3. More code updates.
+
+		[B]2.0.1[/B]
+		1. Quick bugfix.
+
+		[B]2.0[/B]
+		1. Added a Quick navigation shortcuts menu.
+		2. Further code updates from Eminence 2.5.
+		3. Fix for Library selection buttons.
+		4. A fix for true hidden headers.
+		5. PVR visual fixes.
+		6. Overhaul of the available views.
+		7. Further mouse control improvements.
+
+		[B]1.9.2[/B]
+		1. Small updates for the backgrounds.
+		2. Changed position for the user rating.
+
+		[B]1.9.1[/B]
+		1. Flags and other modifications for Hubs.
+		2. Updated skin support for Extended Info dialogs.
+
+		[B]1.9[/B]
+		1. Added a new Netflix view for video items (Arctic - Danvers).
+		2. New spinner textures (from Arctic - Danvers).
+		3. Added the user rating system for music and videos.
+		4. Overhauled and fixed the info screens.
+		5. Ported the new dialog design from Eminence 2.5.
+		6. Ported the Settings screen from Eminence 2.5.
+		7. More mouse optimizations for the setting menus.
+		8. Added an option to use music artwork backgrounds.
+		9. Ported the window shadows from Eminence 2.5.
+		10. Fixed a weather widget bug.
+
+		[B]1.8.3[/B]
+		1. Updated the setting labels for Krypton, and improved mouse support.
+
+		[B]1.8.2[/B]
+		1. More code updates and fixes.
+		2. Added new info for addons.
+
+		[B]1.8.1[/B]
+		1. New skin icon.
+		2. Begun updating the code to reflect soon-to-be deprecated string bools.
+		3. A bunch of small fixes to the code.
+		4. Some new flags.
+
+		[B]1.8[/B]
+		1. Improvements and fixes for the Video OSD.
+		2. Moved my portion of the changelog to the addon.xml.
+		3. Restored the addoninfo changelog button for the "news" value.
+		4. Added a setting for duration formats. "script.duration_axbmcuser" now required.
+		5. Updated required addons list.
+		6. Small fixes for the Showcase view.
+
+		[B]1.7[/B]
+		1. Improved vertical and horizontal scrolling.
+		2. Added letter scrollbar (by marcelvedt and the Aeon Madnox team!).
+		3. Added Player.Process dialog for Krypton.
+		4. Adapted the game controlers file from Eminence 2.5 (needs to be tested).
+		5. Fixed some small glitches.
+
+		[B]1.6[/B]
+		1. Added animated artwork!
+		2. Cleaned up inconsistent code.
+		3. Added proper settings and labels for various new features.
+
+		[B]1.5.1[/B]
+		1. Better flags icons and other small fixes.
+
+		[B]1.5[/B]
+		1. Added support for rotating ExtraFanart with Skin Helper!
+		2. Fixed the Krypton settings screen.
+		3. Added RottenTomatoes, Metacritic and IMDb ratings to the VideoInfo screen.
+		4. Updated the Dialogs and added the "Get more..." and "Cancel" buttons.
+		5. Added the Showcase view from Eminence 2.5!
+		6. Redesigned the way Video OSD works.
+		7. Fixed most of the Skin Helper properties.
+		8. Altered flag aspect ratio.
+		9. Fixed and improved the movieset display.
+		10. Redesigned the large submenu.
+		11. Tweaked the timestamp bubble.
+		12. Removed the changelog button from the addon info screen.
+		13. Darkened the interface dffuse graphic.
+		14. Repaired the subitle offset slider.
+		15. Modded the way source flags are displayed while playing.
+		16. Changed the OSD info button function.
+		</news>
+	</extension>
+</addon>
+
+<addon id="skin.explore" version="5.0.1" name="Explore" provider-name="Tgx">
+    <requires>
+        <import addon="xbmc.gui" version="5.12.0"/>
+        <import addon="script.favourites" version="3.2.0"/>
+        <import addon="script.skinshortcuts" version="0.2.4"/>
+        <import addon="resource.images.weatherfanart.single" version="0.0.4"/>
+        <import addon="resource.images.studios.white" version="0.0.6"/>
+        <import addon="resource.images.recordlabels.white" version="0.0.6"/>
+        <import addon="resource.uisounds.nebula" version="0.0.1"/>
+        <import addon="resource.images.languageflags.colour" version="0.0.2"/>
+        <import addon="script.image.resource.select" version="0.0.5"/>
+        <import addon="script.skin.helper.service" version="1.1.3"/>
+        <import addon="script.skin.helper.backgrounds" version="1.0.21"/>
+        <import addon="script.skin.helper.colorpicker" version="1.0.11"/>
+        <import addon="script.skin.helper.skinbackup" version="1.0.12"/>
+        <import addon="plugin.program.autocompletion" version="1.0.1"/>
+    </requires>
+    <extension point="xbmc.gui.skin" debugging="false">
+        <res width="1920" height="1080" aspect="16:9" default="true" folder="1080i"/>
+    </extension>
+    <extension point="xbmc.addon.metadata">
+        <summary lang="de">Einfacher heller oder dunkler Skin für Full-HD Bildschirme mit vielen Extras.</summary>
+        <summary lang="el">Απλό και πλήρες, φωτεινό ή σκοτεινό κέλυφος, σχεδιασμένο για οθόνες υψηλής ανάλυσης (Full HD).</summary>
+        <summary lang="en">Simple and full-featured light or dark color skin designed for Full HD TV screens.</summary>
+        <summary lang="en_AU">Simple and full-featured light or dark colour skin designed for Full HD TV screens.</summary>
+        <summary lang="en_NZ">Simple and full-featured light or dark color skin designed for Full HD TV screens.</summary>
+        <summary lang="en_US">Simple and full-featured light or dark color skin designed for Full HD TV screens.</summary>
+        <summary lang="es">Un skin simple, de color claro u oscuro, y con todas las funciones, diseñado para televisores Full HD.</summary>
+        <summary lang="fr">Skins clair ou foncé simple et complet conçu pour des écrans TV Full HD.</summary>
+        <summary lang="fr_CA">Habillage simple et complet, de couleur claire ou sombre, conçu pour les écrans à HD intégrale.</summary>
+        <summary lang="he">מעטפת פשוטה ורבת תכונות בצבעים כהים או בהירים המותאמת במיוחד למסכים באבחנת Full HD.</summary>
+        <summary lang="it">Skin dal colore bianco o nero, semplice e completa, progettata per TV Full HD</summary>
+        <summary lang="ko">모든 기능을 지원하는 단순한 스킨으로  밝은 색상과 어두운 색상을 지원하며 Full HD TV 용으로 디자인하였습니다.</summary>
+        <summary lang="lt">Paprasta ir su visomis papildomomis funkcijomis, šviesi arba tamsi teminė išvaizda, sukurta FullHD TV ekranams.</summary>
+        <summary lang="ms">Kulit ringkas dan warna cerah atau gelap berfitur penuh untuk skrin TV HD Penuh.</summary>
+        <summary lang="nl">Eenvoudige en volledig gekenmerkte lichte of donkere skin ontworpen voor Full-HD TV-schermen.</summary>
+        <summary lang="pl">Prosta, w pełni funkcjonalna skóra zawierająca jasny i mroczny motyw, zaprojektowana dla ekranu telewizyjnych Full HD.</summary>
+        <summary lang="pt_BR">Skin simples e completa nas cores lihgt ou dark para telas Full HD TV.</summary>
+        <summary lang="ro">Costum simplu și complet pe alb sau pe negru proiectat pentru ecrane tv de înaltă definiție.</summary>
+        <description lang="de">Einfacher heller oder dunkler Skin für Full-HD Bildschirme mit vielen Extras.</description>
+        <description lang="el">Απλό και πλήρες, φωτεινό ή σκοτεινό κέλυφος, σχεδιασμένο για οθόνες υψηλής ανάλυσης (Full HD).</description>
+        <description lang="en">Simple and full-featured light or dark color skin designed for Full HD TV screens.</description>
+        <description lang="en_AU">Simple and full-featured light or dark colour skin designed for Full HD TV screens.</description>
+        <description lang="en_NZ">Simple and full-featured light or dark color skin designed for Full HD TV screens.</description>
+        <description lang="en_US">Simple and full-featured light or dark color skin designed for Full HD TV screens.</description>
+        <description lang="es">Un skin simple, de color claro u oscuro, y con todas las funciones, diseñado para televisores Full HD.</description>
+        <description lang="fr">Skins clair ou foncé simple et complet conçu pour des écrans TV Full HD.</description>
+        <description lang="fr_CA">Habillage simple et complet, de couleur claire ou sombre, conçu pour les écrans à HD intégrale.</description>
+        <description lang="he">מעטפת פשוטה ורבת תכונות בצבעים כהים או בהירים המותאמת במיוחד למסכים באבחנת Full HD.</description>
+        <description lang="it">Skin dal colore bianco o nero, semplice e completa, progettata per TV Full HD</description>
+        <description lang="ko">모든 기능을 지원하는 단순한 스킨으로  밝은 색상과 어두운 색상을 지원하며 Full HD TV 용으로 디자인하였습니다.</description>
+        <description lang="lt">Paprasta ir su visomis papildomomis funkcijomis, šviesi arba tamsi teminė išvaizda, sukurta FullHD TV ekranams.</description>
+        <description lang="ms">Kulit ringkas dan warna cerah atau gelap berfitur penuh direka untuk skrin TV HD Penuh.</description>
+        <description lang="nl">Eenvoudige en volledig gekenmerkte lichte of donkere skin ontworpen voor Full-HD TV-schermen.</description>
+        <description lang="pl">Prosta, w pełni funkcjonalna skóra zawierająca jasny i mroczny motyw, zaprojektowana dla ekranu telewizyjnych Full HD.</description>
+        <description lang="pt_BR">Skin simples e completa nas cores lihgt ou dark para telas Full HD TV.</description>
+        <description lang="ro">Costum simplu și complet pe alb sau pe negru proiectat pentru ecrane tv de înaltă definiție.</description>
+        <disclaimer lang="en">This skin does not work on Apple Tv 2</disclaimer>
+        <disclaimer lang="it">Questa skin non funziona su Apple Tv 2</disclaimer>
+        <license>Creative Commons Attribution-ShareAlike 3.0 Unported License</license>
+        <forum>http://forum.kodi.tv/forumdisplay.php?fid=211</forum>
+        <source>https://github.com/Tgxcorporation/skin.nebula</source>
+        <website>https://github.com/Tgxcorporation/skin.nebula/wiki</website>
+        <platform>all</platform>
+        <assets>
+            <icon>icon.png</icon>
+            <fanart>fanart.jpg</fanart>
+            <screenshot>screenshots/screenshot01.jpg</screenshot>
+            <screenshot>screenshots/screenshot02.jpg</screenshot>
+            <screenshot>screenshots/screenshot03.jpg</screenshot>
+            <screenshot>screenshots/screenshot04.jpg</screenshot>
+            <screenshot>screenshots/screenshot05.jpg</screenshot>
+            <screenshot>screenshots/screenshot06.jpg</screenshot>
+            <screenshot>screenshots/screenshot07.jpg</screenshot>
+            <screenshot>screenshots/screenshot08.jpg</screenshot>
+            <screenshot>screenshots/screenshot09.jpg</screenshot>
+            <screenshot>screenshots/screenshot10.jpg</screenshot>
+        </assets>
+    </extension>
+</addon>
+
+<addon
+    id="skin.urbanessence"
+    version="2.4.2"
+    name="Urban Essence"
+    provider-name="jurialmunkey - Mod by Guilouz - Mod by Alanon">
+    <requires>
+        <import addon="xbmc.gui" version="5.12.0"/>
+        <import addon="script.skinshortcuts" version="1.0.17"/>
+        <import addon="script.skin.helper.service" version="1.1.16"/>
+		<import addon="script.skin.helper.widgets" version="1.0.28"/>
+		<import addon="script.skin.helper.colorpicker" version="1.0.12"/>
+        <import addon="script.extendedinfo" version="5.0.0"/>
+        <import addon="script.image.resource.select" version="0.0.5"/>
+        <import addon="plugin.program.autocompletion" version="1.0.1"/>
+    </requires>
+    <extension point="xbmc.gui.skin" effectslowdown="1.00" debugging="false">
+        <res width="1920" height="1080" aspect="16:9" default="true" folder="16x9" />
+    </extension>
+    <extension point="xbmc.addon.metadata">
+        <platform>all</platform>
+        <summary lang="en">Clean, clear, simple, modern.</summary>
+        <summary lang="fr">Clair, simple et moderne.</summary>
+        <description lang="en">Eminence is a skin that aims to be clean, clear, simple and modern.</description>
+        <description lang="fr">Eminence est un thème qui vise à être clair, simple et moderne.</description>
+		<assets>
+		 	<icon>icon.png</icon>
+ 			<fanart>fanart.jpg</fanart>
+			<screenshot>extras/viewthumbs/56.jpg</screenshot>
+ 			<screenshot>extras/viewthumbs/521.jpg</screenshot>
+ 			<screenshot>extras/viewthumbs/600.jpg</screenshot>
+ 			<screenshot>extras/viewthumbs/506.jpg</screenshot>
+ 			<screenshot>extras/viewthumbs/52.jpg</screenshot>
+ 			<screenshot>extras/viewthumbs/159.jpg</screenshot>
+		</assets>
+		<news> Changelog:
+
+		[B]2.4.2[/B]
+		1. Huge viewtype overhaul.
+		2. Showcase fix.
+		3. RSS font size enlargement.
+		4. Ported Settings screen.
+		5. Ported Showcase Widget.
+		6. Tweaks to the info screen.
+		7. Small OSD fix.
+		8. Small Hub fix.
+		9. Script duration updates.
+
+		[B]2.4.1[/B]
+		1. Fixed widget type bug.
+		2. Fix for viewtype lock.
+
+		[B]2.4[/B]
+		1. Further viewtype fixes.
+		2. Music artwork overhaul.
+		3. Add-on Info dialogue tweaks.
+		4. Light theme info fix.
+		5. Light theme busy dialogue tweak.
+		6. Set Icon fix.
+		7. Added manfeed's Videolyrics Plus.
+		8. Showcase tweaks.
+		9. Tweaked playlist background options.
+		10. Added Low List view.
+		11. Rotation label bugfix.
+		12. Support for Artwork Beef add-on.
+		13. Skin Backup workaround.
+		14. French translation overhaul (by Kelexel)
+		15. Light theme dark interface tweaks.
+		16. Info and flags redundancy fixes.
+		17. Caching OSD fix.
+
+		[B]2.3.9.1[/B]
+		1. Add-on browsing quick-fix.
+
+		[B]2.3.9[/B]
+		1. Busy Dialog tweak.
+		2. Tweaked viewtypes conditions.
+		3. Fixed add-on loading artefacts.
+		4. Small log error fixes (syntax).
+		5. Home menu header is now hideable.
+		6. Fixed logo and flags bugs.
+		7. Video Info ratings tweak.
+		8. Video Info darken effect.
+		9. QuickNav tweak.
+		10. Subtitle Sync tweak.
+		11. Added Hebrew translation (scofield272)!
+
+		[B]2.3.8[/B]
+		1. Context menu support for Library Editor Script.
+		2. Context menu support for SimplePlaylists.
+		3. PVR OSD fixes.
+		4. Darkened the dim option.
+		5. Random Backgrounds fix.
+		6. Scrollbar fixes.
+		7. Another attempt at RSS animation fix.
+		8. OSD Logo fix.
+		9. Poster Border fix.
+
+		[B]2.3.7[/B]
+		1. RSS animation tweaks.
+		2. RightList artist thumbs fix.
+		3. LiveTV OSD fix.
+		4. Flag fallbacks fixes.
+		5. Added plot outline option.
+		6. Alternate RightList for music tweak.
+		7. RightList for video content.
+
+		[B]2.3.6[/B]
+		1. Added a duration setting for home widgets.
+		2. Hub widget fixes.
+
+		[B]2.3.5[/B]
+		1. RightList tweaks.
+		2. Flags tweaks.
+		3. Spanish translation added!
+
+		[B]2.3.4[/B]
+		1. RightList fixes.
+		2. Skin settings reorganisation.
+		3. Fixes for the French translation.
+		4. Significant Hub widget improvements.
+
+		[B]2.3.3[/B]
+		1. Updated a required add-on listing.
+		2. Added a preliminary RightList view.
+		3. Decreased the Home gradient.
+		4. Fixes for the French translation.
+		5. Disabled Black and Sollid colour themes (for now).
+
+		[B]2.3.2[/B]
+		1. Added a vertical/horizontal context menu switch.
+		2. Widget handling improved.
+		3. RSS bar for Text Only home.
+
+		[B]2.3.1[/B]
+		1. More music views.
+		2. Updated French strings (Thanks to Kelexel!)
+		3. Scrollbar fixes.
+		4. Skin performance fixes.
+		5. User rating fix.
+		6. Fulscreen setting added.
+
+		[B]2.3[/B]
+		1. Improved extrathumbs handling.
+		2. Improved the new context menu.
+		3. Improved rating icons.
+		4. Improved userratings.
+		5. Added an info menu in the PVR OSD.
+		6. Added screenshots for the addon.xml.
+		7. Default highlight is back to blue.
+		8. Dependencies version bump.
+		9. Updated manfeed's lyrics to V2.
+		10. Show/Hide CD case option.
+		11. Artist logo improvements.
+		12. Music OSD bugfix.
+		13. Adjusted the skin background colour effects.
+
+		[B]2.2.7[/B]
+		1. Added a new context menu (testing!).
+		2. Added a rotating backgrounds timer.
+		3. Added extrathumbs support.
+		4. Addon settings button fixes.
+
+		[B]2.2.6[/B]
+		1. QuickNav fixes.
+		2. More PVR fixes.
+		3. Other small fixes.
+
+		[B]2.2.5[/B]
+		1. Better mouse support for the skin settings.
+		2. Subtitle menu fixes.
+		3. Improved english language strings.
+		4. Several small PVR fixes and tweaks.
+
+		[B]2.2.4[/B]
+		1. Added setting for onback command.
+		2. Small language fix.
+
+		[B]2.2.3[/B]
+		1. Tweaks for the light colourscheme.
+		2. Version bump for the github experiment.
+
+		[B]2.2.2[/B]
+		1. Added an opacity setting for the OSD.
+
+		[B]2.2.1[/B]
+		1. Added a clickable seekbar.
+		2. Added new colour themes.
+		3. Shortened the skin name.
+		4. Added new icons.
+		5. Tweaked the subtitles menu.
+		6. Small fixes.
+
+		[B]2.2[/B]
+		1. Added a custom dialog for the view selector.
+		2. Added new selector thumbnails.
+		3. Added "Plain List" view.
+		4. Added "Lovefilm" view.
+		5. Added "Info List 3" view.
+		6. Added "Medium Icons" view.
+		7. Added an improved NextUp PostPlay skin.
+		8. Added "disc.png" artwork for Music OSD.
+		9. Added more flags settings.
+		10. Added Director/Revenue info for the movie library.
+		11. Added Forced Views for most content types.
+		12. Fixed hub logos.
+		13. Fixed movieset overlay info.
+		14. Fixed subtitle dialog behaviour.
+		15. Fixed some minor dialogs.
+		16. General speed improvements.
+		17. Improved Showcase posters.
+		18. Improved video thumbs.
+		19. Improved Header colours.
+		20. Improved hub back actions.
+		21. Improved the Line Labels.
+
+		[B]2.1[/B]
+		1. Added manfeed's lyrics.
+		2. Fixes for Hub widgets.
+		3. Fixes for weather.
+		4. Added music genre and record label resources.
+		5. Added record label icons in dialog infos.
+		6. Refined view types and categories.
+		7. Added the old Hub menu as an option.
+		8. Improved QuickNav and submenu handling.
+		9. Functional Genre widget.
+
+		[B]2.0.9[/B]
+		1. Some stubborn bugs squashed.
+
+		[B]2.0.8[/B]
+		1. Fixed dialog buttons.
+		2. Fixed playlist dialog.
+		3. Added some new animations.
+		4. Mouse supported submenu.
+
+		[B]2.0.7[/B]
+		1. Small fixes.
+
+		[B]2.0.6[/B]
+		1. Added a fake disc with writing in Music OSD.
+		2. Repaired the repeat button.
+		3. Removed duplicate spinner textures.
+		4. Added more dependencies.
+		5. Settings window shortcuts for OpenELEC, LibreELEC, and OSMC.
+		6. Added a record button to the PVR OSD.
+		7. Added Kodi's Privacy Policy display.
+		8. Code updates.
+
+		[B]2.0.5[/B]
+		1. Tweaked the cast list.
+		2. Added and improved skin dependencies.
+
+		[B]2.0.4[/B]
+		1. Color Picker fix.
+
+		[B]2.0.3[/B]
+		1. Power menu fix.
+		2. ColorPicker fixes.
+		3. Moved the busy spinner.
+		4. Moved the user ratings under the clock.
+
+		[B]2.0.2[/B]
+		1. Revert header change.
+		2. New cast info in the OSD.
+		3. More code updates.
+
+		[B]2.0.1[/B]
+		1. Quick bugfix.
+
+		[B]2.0[/B]
+		1. Added a Quick navigation shortcuts menu.
+		2. Further code updates from Eminence 2.5.
+		3. Fix for Library selection buttons.
+		4. A fix for true hidden headers.
+		5. PVR visual fixes.
+		6. Overhaul of the available views.
+		7. Further mouse control improvements.
+
+		[B]1.9.2[/B]
+		1. Small updates for the backgrounds.
+		2. Changed position for the user rating.
+
+		[B]1.9.1[/B]
+		1. Flags and other modifications for Hubs.
+		2. Updated skin support for Extended Info dialogs.
+
+		[B]1.9[/B]
+		1. Added a new Netflix view for video items (Arctic - Danvers).
+		2. New spinner textures (from Arctic - Danvers).
+		3. Added the user rating system for music and videos.
+		4. Overhauled and fixed the info screens.
+		5. Ported the new dialog design from Eminence 2.5.
+		6. Ported the Settings screen from Eminence 2.5.
+		7. More mouse optimizations for the setting menus.
+		8. Added an option to use music artwork backgrounds.
+		9. Ported the window shadows from Eminence 2.5.
+		10. Fixed a weather widget bug.
+
+		[B]1.8.3[/B]
+		1. Updated the setting labels for Krypton, and improved mouse support.
+
+		[B]1.8.2[/B]
+		1. More code updates and fixes.
+		2. Added new info for addons.
+
+		[B]1.8.1[/B]
+		1. New skin icon.
+		2. Begun updating the code to reflect soon-to-be deprecated string bools.
+		3. A bunch of small fixes to the code.
+		4. Some new flags.
+
+		[B]1.8[/B]
+		1. Improvements and fixes for the Video OSD.
+		2. Moved my portion of the changelog to the addon.xml.
+		3. Restored the addoninfo changelog button for the "news" value.
+		4. Added a setting for duration formats. "script.duration_axbmcuser" now required.
+		5. Updated required addons list.
+		6. Small fixes for the Showcase view.
+
+		[B]1.7[/B]
+		1. Improved vertical and horizontal scrolling.
+		2. Added letter scrollbar (by marcelvedt and the Aeon Madnox team!).
+		3. Added Player.Process dialog for Krypton.
+		4. Adapted the game controlers file from Eminence 2.5 (needs to be tested).
+		5. Fixed some small glitches.
+
+		[B]1.6[/B]
+		1. Added animated artwork!
+		2. Cleaned up inconsistent code.
+		3. Added proper settings and labels for various new features.
+
+		[B]1.5.1[/B]
+		1. Better flags icons and other small fixes.
+
+		[B]1.5[/B]
+		1. Added support for rotating ExtraFanart with Skin Helper!
+		2. Fixed the Krypton settings screen.
+		3. Added RottenTomatoes, Metacritic and IMDb ratings to the VideoInfo screen.
+		4. Updated the Dialogs and added the "Get more..." and "Cancel" buttons.
+		5. Added the Showcase view from Eminence 2.5!
+		6. Redesigned the way Video OSD works.
+		7. Fixed most of the Skin Helper properties.
+		8. Altered flag aspect ratio.
+		9. Fixed and improved the movieset display.
+		10. Redesigned the large submenu.
+		11. Tweaked the timestamp bubble.
+		12. Removed the changelog button from the addon info screen.
+		13. Darkened the interface dffuse graphic.
+		14. Repaired the subitle offset slider.
+		15. Modded the way source flags are displayed while playing.
+		16. Changed the OSD info button function.
+		</news>
+	</extension>
+</addon>
+
+<addon
+  id="skin.xenon"
+  version="420"
+  name="Diggz Xenon"
+  provider-name="Helly">
+  <requires>
+    <import addon="xbmc.gui" version="5.12.0"/>
+	  <import addon="script.favourites" version="6.0.3"/>
+	  <import addon="service.skin.widgets" version="0.0.32"/>
+	  <import addon="service.library.data.provider" version="0.1.6"/>
+	  <import addon="script.randomandlastitems" version="2.2.2"/>
+  </requires>
+  <extension
+    point="xbmc.gui.skin"
+    debugging="false"
+    effectslowdown="1.0">
+    <res width="1280" height="720" aspect="16:9" default="true" folder="720p" />
+  </extension>
+  <extension point="xbmc.addon.metadata">
+    <summary lang="en">eXtended MOD of Confluence skin originally by Jezz_X and CCM by Mudislander.</summary>
+    <summary lang="en_US">eXtended MOD of Confluence skin originally by Jezz_X and CCM by Mudislander.</summary>
+    <summary lang="nl">Uitgebreide MOD van Confluence skin origineel door Jezz_X en CCM door Mudislander.</summary>
+    <description lang="en">Xonfluence is a MOD of Confluence to enable a greater degree of user customisation to the default skin (based by Mudislander's CCM).</description>
+    <description lang="en_US">Xonfluence is a MOD of Confluence to enable a greater degree of user customisation to the default skin (based by Mudislander's CCM).</description>
+    <description lang="nl">Xonfluence is een MOD van Confluence om een grotere aanpassingsmogelijkheid te geven ten opzichten van de standaard skin (gebaseerd op Mudislander's CCM).</description>
+    <disclaimer lang="en">You break it - You get to keep the pieces</disclaimer>
+    <disclaimer lang="en_US">You break it - You get to keep the pieces</disclaimer>
+    <disclaimer lang="nl">Wie zijn billen brandt - moet op de blaren zitten</disclaimer>
+    <platform>all</platform>
+    <assets>
+      <icon>resources/icon.png</icon>
+      <fanart>resources/fanart.jpg</fanart>
+	    <screenshot>resources/screenshot-01.jpg</screenshot>
+	    <screenshot>resources/screenshot-02.jpg</screenshot>
+	    <screenshot>resources/screenshot-03.jpg</screenshot>
+	    <screenshot>resources/screenshot-04.jpg</screenshot>
+	    <screenshot>resources/screenshot-05.jpg</screenshot>
+	    <screenshot>resources/screenshot-06.jpg</screenshot>
+	    <screenshot>resources/screenshot-07.jpg</screenshot>
+	    <screenshot>resources/screenshot-08.jpg</screenshot>
+	    <screenshot>resources/screenshot-09.jpg</screenshot>
+    </assets>
+    <news>See changelog for latest changes</news>
+  </extension>
+</addon>
 </addons>
