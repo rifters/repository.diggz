@@ -55,6 +55,11 @@
 		<setting id="includevideo" type="bool" label="Include Video Addons in Clear Cache: " default="true"/>
 		<setting id="includeall" type="bool" label="Include All Addons: " default="true" enable="!eq(-1,false)" visible="!eq(-1,false)"/>
 	</category>
+	
+	<category label="Install Settings">
+		<setting type="lsep" label="Keep Settings When Installing Build:"/>
+		<setting id="keepfavourites" type="bool" label="Keep My Favourites" default="true"/>
+	</category>
 
 	<category label="Trakt Settings">
 		<setting type="lsep" label="Save Trakt Data:"/>
