@@ -741,20 +741,17 @@ def maintMenu(view=None):
 		addFile('Clear Thumbnails: [COLOR green][B]%s[/B][/COLOR]' % wiz.convertSize(sizethumb),'clearthumb',      icon=ICONMAINT, themeit=THEME3)
 		addFile('Clear Old Thumbnails', 'oldThumbs',      icon=ICONMAINT, themeit=THEME3)
 		addFile('Clear Crash Logs',               'clearcrash',      icon=ICONMAINT, themeit=THEME3)
-		addFile('Purge Databases',                'purgedb',         icon=ICONMAINT, themeit=THEME3)
 		addFile('Fresh Start',                    'freshstart',      icon=ICONMAINT, themeit=THEME3)
 	addDir ('[B]Addon Tools[/B]',       'maint', 'addon',  icon=ICONMAINT, themeit=THEME1)
 	if view == "addon" or SHOWMAINT == 'true': 
 		addFile('Remove Addons',                  'removeaddons',    icon=ICONMAINT, themeit=THEME3)
 		addDir ('Remove Addon Data',              'removeaddondata', icon=ICONMAINT, themeit=THEME3)
 		addDir ('Enable/Disable Addons',          'enableaddons',    icon=ICONMAINT, themeit=THEME3)
-		addFile('Enable/Disable Adult Addons',    'toggleadult',     icon=ICONMAINT, themeit=THEME3)
 		addFile('Force Update Addons',            'forceupdate',     icon=ICONMAINT, themeit=THEME3)
 		addFile('Hide Passwords On Keyboard Entry',   'hidepassword',   icon=ICONMAINT, themeit=THEME3)
 		addFile('Unhide Passwords On Keyboard Entry', 'unhidepassword', icon=ICONMAINT, themeit=THEME3)
 	addDir ('[B]Misc Maintenance[/B]'     ,'maint', 'misc',   icon=ICONMAINT, themeit=THEME1)
 	if view == "misc" or SHOWMAINT == 'true': 
-		addFile('Kodi 17 Fix',                    'kodi17fix',       icon=ICONMAINT, themeit=THEME3)
 		addFile('Reload Skin',                    'forceskin',       icon=ICONMAINT, themeit=THEME3)
 		addFile('Reload Profile',                 'forceprofile',    icon=ICONMAINT, themeit=THEME3)
 		addFile('Force Close Kodi',               'forceclose',      icon=ICONMAINT, themeit=THEME3)
@@ -788,13 +785,10 @@ def maintMenu(view=None):
 			addFile('Quick Configure AdvancedSettings.xml',    'autoadvanced',    icon=ICONMAINT, themeit=THEME3)
 		addFile('Scan Sources for broken links',  'checksources',    icon=ICONMAINT, themeit=THEME3)
 		addFile('Scan For Broken Repositories',   'checkrepos',      icon=ICONMAINT, themeit=THEME3)
-		addFile('Fix Addons Not Updating',        'fixaddonupdate',  icon=ICONMAINT, themeit=THEME3)
 		addFile('Remove Non-Ascii filenames',     'asciicheck',      icon=ICONMAINT, themeit=THEME3)
-		addFile('Convert Paths to special',       'convertpath',     icon=ICONMAINT, themeit=THEME3)
 		addDir ('System Information',             'systeminfo',      icon=ICONMAINT, themeit=THEME3)
 	addFile('Show All Maintenance: %s' % maint.replace('true',on).replace('false',off) ,'togglesetting', 'showmaint', icon=ICONMAINT, themeit=THEME2)
 	addDir ('[I]<< Return to Main Menu[/I]', icon=ICONMAINT, themeit=THEME2)
-	addFile('Third Party Wizards: %s' % thirdparty.replace('true',on).replace('false',off) ,'togglesetting', 'enable3rd', fanart=FANART, icon=ICONMAINT, themeit=THEME1)
 	if thirdparty == 'true':
 		first = THIRD1NAME if not THIRD1NAME == '' else 'Not Set'
 		secon = THIRD2NAME if not THIRD2NAME == '' else 'Not Set'
@@ -813,14 +807,6 @@ def maintMenu(view=None):
 	addFile('Include Video Cache in Clear Cache: %s' % includevid.replace('true',on).replace('false',off), 'togglecache', 'includevideo', icon=ICONMAINT, themeit=THEME3)
 	if includevid == 'true':
 		addFile('--- Include All Video Addons: %s' % includeall.replace('true',on).replace('false',off), 'togglecache', 'includeall', icon=ICONMAINT, themeit=THEME3)
-		addFile('--- Include Bob: %s' % includebob.replace('true',on).replace('false',off), 'togglecache', 'includebob', icon=ICONMAINT, themeit=THEME3)
-		addFile('--- Include Phoenix: %s' % includepho.replace('true',on).replace('false',off), 'togglecache', 'includephoenix', icon=ICONMAINT, themeit=THEME3)
-		addFile('--- Include Specto: %s' % includespe.replace('true',on).replace('false',off), 'togglecache', 'includespecto', icon=ICONMAINT, themeit=THEME3)
-		addFile('--- Include Exodus: %s' % includeexo.replace('true',on).replace('false',off), 'togglecache', 'includeexodus', icon=ICONMAINT, themeit=THEME3)
-		addFile('--- Include Salts: %s' % includesal.replace('true',on).replace('false',off), 'togglecache', 'includesalts', icon=ICONMAINT, themeit=THEME3)
-		addFile('--- Include Salts HD Lite: %s' % includeshd.replace('true',on).replace('false',off), 'togglecache', 'includesaltslite', icon=ICONMAINT, themeit=THEME3)
-		addFile('--- Include One Channel: %s' % includeone.replace('true',on).replace('false',off), 'togglecache', 'includeonechan', icon=ICONMAINT, themeit=THEME3)
-		addFile('--- Include Genesis: %s' % includegen.replace('true',on).replace('false',off), 'togglecache', 'includegenesis', icon=ICONMAINT, themeit=THEME3)
 		addFile('--- Enable All Video Addons', 'togglecache', 'true', icon=ICONMAINT, themeit=THEME3)
 		addFile('--- Disable All Video Addons', 'togglecache', 'false', icon=ICONMAINT, themeit=THEME3)
 	setView('files', 'viewType')
@@ -996,22 +982,10 @@ def saveMenu():
 	super      = 'true' if KEEPSUPER     == 'true' else 'false'
 	whitelist  = 'true' if KEEPWHITELIST == 'true' else 'false'
 
-	addDir ('Keep Trakt Data',               'trakt',                icon=ICONTRAKT, themeit=THEME1)
-	addDir ('Keep Real Debrid',              'realdebrid',           icon=ICONREAL,  themeit=THEME1)
-	addDir ('Keep Login Info',               'login',                icon=ICONLOGIN, themeit=THEME1)
-	addFile('Import Save Data',              'managedata', 'import', icon=ICONSAVE,  themeit=THEME1)
-	addFile('Export Save Data',              'managedata', 'export', icon=ICONSAVE,  themeit=THEME1)
 	addFile('- Click to toggle settings -', '', themeit=THEME3)
 	addFile('Save Trakt: %s' % trakt.replace('true',on).replace('false',off)                       ,'togglesetting', 'keeptrakt',      icon=ICONTRAKT, themeit=THEME1)
 	addFile('Save Real Debrid: %s' % real.replace('true',on).replace('false',off)                  ,'togglesetting', 'keepdebrid',     icon=ICONREAL,  themeit=THEME1)
-	addFile('Save Login Info: %s' % login.replace('true',on).replace('false',off)                  ,'togglesetting', 'keeplogin',      icon=ICONLOGIN, themeit=THEME1)
-	addFile('Keep \'Sources.xml\': %s' % sources.replace('true',on).replace('false',off)           ,'togglesetting', 'keepsources',    icon=ICONSAVE,  themeit=THEME1)
-	addFile('Keep \'Profiles.xml\': %s' % profiles.replace('true',on).replace('false',off)         ,'togglesetting', 'keepprofiles',   icon=ICONSAVE,  themeit=THEME1)
-	addFile('Keep \'Advancedsettings.xml\': %s' % advanced.replace('true',on).replace('false',off) ,'togglesetting', 'keepadvanced',   icon=ICONSAVE,  themeit=THEME1)
 	addFile('Keep \'Favourites.xml\': %s' % favourites.replace('true',on).replace('false',off)     ,'togglesetting', 'keepfavourites', icon=ICONSAVE,  themeit=THEME1)
-	addFile('Keep Super Favourites: %s' % super.replace('true',on).replace('false',off)            ,'togglesetting', 'keepsuper',      icon=ICONSAVE,  themeit=THEME1)
-	addFile('Keep Installed Repo\'s: %s' % repos.replace('true',on).replace('false',off)           ,'togglesetting', 'keeprepos',      icon=ICONSAVE,  themeit=THEME1)
-	addFile('Keep My \'WhiteList\': %s' % whitelist.replace('true',on).replace('false',off)        ,'togglesetting', 'keepwhitelist',  icon=ICONSAVE,  themeit=THEME1)
 	if whitelist == 'true':
 		addFile('Edit My Whitelist',        'whitelist', 'edit',   icon=ICONSAVE,  themeit=THEME1)
 		addFile('View My Whitelist',        'whitelist', 'view',   icon=ICONSAVE,  themeit=THEME1)
@@ -1602,8 +1576,8 @@ def createMenu(type, add, name):
 	return menu_items
 
 def toggleCache(state):
-	cachelist = ['includevideo', 'includeall', 'includebob', 'includephoenix', 'includespecto', 'includegenesis', 'includeexodus', 'includeonechan', 'includesalts', 'includesaltslite']
-	titlelist = ['Include Video Addons', 'Include All Addons', 'Include Bob', 'Include Phoenix', 'Include Specto', 'Include Genesis', 'Include Exodus', 'Include One Channel', 'Include Salts', 'Include Salts Lite HD']
+	cachelist = ['includevideo', 'includeall']
+	titlelist = ['Include Video Addons', 'Include All Addons']
 	if state in ['true', 'false']:
 		for item in cachelist:
 			wiz.setS(item, state)

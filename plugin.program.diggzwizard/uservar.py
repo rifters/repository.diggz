@@ -7,12 +7,12 @@ ADDON_ID       = xbmcaddon.Addon().getAddonInfo('id')
 ADDONTITLE     = 'Diggz Wizard'
 EXCLUDES       = [ADDON_ID]
 # Text File with build info in it.
-BUILDFILE      = 'http://wizardfiles.jdiggz.com/wizrdtexts/diggzwizard.txt'
+BUILDFILE      = 'http://wizard.jdiggz.com/wizardtexts/diggzwizard.txt'
 # How often you would list it to check for build updates in days
 # 0 being every startup of kodi
 UPDATECHECK    = 0
 # Text File with apk info in it.
-APKFILE        = 'http://wizardfiles.jdiggz.com/wizrdtexts/Diggzwizardapk.txt'
+APKFILE        = 'http://wizard.jdiggz.com/wizardtexts/Diggzwizardapk.txt'
 # Text File with Youtube Videos urls.  Leave as 'http://' to ignore
 YOUTUBETITLE   = ''
 YOUTUBEFILE    = 'http://'
@@ -34,17 +34,17 @@ ART            = os.path.join(PATH, 'resources', 'art')
 # Example:  ICONMAINT     = os.path.join(ART, 'mainticon.png')
 #           ICONSETTINGS  = 'http://aftermathwizard.net/repo/wizard/settings.png'
 # Leave as http:// for default icon
-ICONBUILDS     = 'http://wizardfiles.jdiggz.com/DiggzWizardpngs/build-icon.png'
-ICONMAINT      = 'http://wizardfiles.jdiggz.com/DiggzWizardpngs/mantanence-icon.png'
-ICONAPK        = 'http://wizardfiles.jdiggz.com/DiggzWizardpngs/apkinstaller.png'
-ICONADDONS     = 'http://wizardfiles.jdiggz.com/DiggzWizardpngs/addoninstaller-1.png'
-ICONYOUTUBE    = 'http://wizardfiles.jdiggz.com/DiggzWizardpngs/youtube.png'
-ICONSAVE       = 'http://wizardfiles.jdiggz.com/DiggzWizardpngs/savedata.png'
-ICONTRAKT      = 'http://wizardfiles.jdiggz.com/DiggzWizardpngs/trakt.png'
-ICONREAL       = 'http://wizardfiles.jdiggz.com/DiggzWizardpngs/real-debrid-1.png'
-ICONLOGIN      = 'http://wizardfiles.jdiggz.com/DiggzWizardpngs/login.png'
+ICONBUILDS     = 'http://wizard.jdiggz.com/DiggzWizardpngs/build-icon.png'
+ICONMAINT      = 'http://wizard.jdiggz.com/DiggzWizardpngs/mantanence-icon.png'
+ICONAPK        = 'http://wizard.jdiggz.com/DiggzWizardpngs/apkinstaller.png'
+ICONADDONS     = 'http://wizard.jdiggz.com/DiggzWizardpngs/addoninstaller-1.png'
+ICONYOUTUBE    = 'http://wizard.jdiggz.com/DiggzWizardpngs/youtube.png'
+ICONSAVE       = 'http://wizard.jdiggz.com/DiggzWizardpngs/savedata.png'
+ICONTRAKT      = 'http://wizard.jdiggz.com/DiggzWizardpngs/trakt.png'
+ICONREAL       = 'http://wizard.jdiggz.com/DiggzWizardpngs/real-debrid-1.png'
+ICONLOGIN      = 'http://wizard.jdiggz.com/DiggzWizardpngs/login.png'
 ICONCONTACT    = 'http://'
-ICONSETTINGS   = 'http://wizardfiles.jdiggz.com/DiggzWizardpngs/settingsicon.png'
+ICONSETTINGS   = 'http://wizard.jdiggz.com/DiggzWizardpngs/settingsicon.png'
 # Hide the ====== seperators 'Yes' or 'No'
 HIDESPACERS    = 'No'
 # Character used in seperator
@@ -67,7 +67,7 @@ THEME5         = '[COLOR '+COLOR1+']Current Theme:[/COLOR] [COLOR '+COLOR2+']%s[
 
 # Message for Contact Page
 # Enable 'Contact' menu item 'Yes' hide or 'No' dont hide
-HIDECONTACT    = 'No'
+HIDECONTACT    = 'yes'
 # You can add \n to do line breaks
 CONTACT        = 'Thank you for choosing Diggz Wizard.\r\n\r\n'
 #Images used for the contact window.  http:// for default icon and fanart
@@ -101,14 +101,19 @@ REPOZIPURL     = ''
 ### NOTIFICATION WINDOW##################################
 #########################################################
 # Enable Notification screen Yes or No
-ENABLE         = 'No'
+ENABLE         = 'Yes'
 # Url to notification file
-NOTIFICATION   = ''
+NOTIFICATION   = 'http://wizard.jdiggz.com/wizardtexts/Diggzwizardnotifications.txt'
 # Use either 'Text' or 'Image'
-HEADERTYPE     = ''
-HEADERMESSAGE  = ''
+HEADERTYPE     = 'Text'
+# Font size of header
+FONTHEADER     = '40'
+HEADERMESSAGE  = 'Diggz Wizard'
+HEADERMESSAGE  = ' Diggz Wizard'
 # url to image if using Image 424x180
-HEADERIMAGE    = ''
+HEADERIMAGE    = 'http://wizard.jdiggz.com/DiggzWizardpngs/diggzwizardicon.png'
+# Font for Notification Window
+FONTSETTINGS   = '40'
 # Background for Notification Window
-BACKGROUND     = ''
+BACKGROUND     = 'http://wizard.jdiggz.com/DiggzWizardpngs/fanart.jpg'
 #########################################################
